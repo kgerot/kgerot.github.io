@@ -93,21 +93,29 @@ feed_show_tags: true
 # --- Colours / background image --- #
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
+# 09090c - Black
+# 2b2c28 - Dark Gray
+# 2d728f - Teal
+# 64aece - Light Teal
+# e8e9f3 - White
 
-navbar-col: "#2B2C28"
-navbar-text-col: "#E8E9F3"
-navbar-border-col: "#2D728F"
-page-col: "#E8E9F3"
-text-col: "#2B2C28"
-link-col: "#2D728F"
-hover-col: "#64AECE"
-footer-col: "#2B2C28"
-footer-text-col: "#E8E9F3"
-footer-link-col: "#3B8EA5"
-h1-col: "#09090C"
-h2-col: "#2D728F"
-h3-col: "#09090C"
-h4-col: "#09090C"
+navbar-col: "#2b2c28"
+navbar-text-col: "#e8e9f3"
+navbar-border-col: "#2d728f"
+
+page-col: "#e8e9f3"
+text-col: "#2b2c28"
+link-col: "#2d728f"
+hover-col: "#64aece"
+
+footer-col: "#2b2c28"
+footer-text-col: "#e8e9f3"
+footer-link-col: "#2d728f"
+
+h1-col: "#09090c"
+h2-col: "#2d728f"
+h3-col: "#2b2c28"
+h4-col: "#2b2c28"
 
 # navbar-col: "#EAEAEA"
 # navbar-text-col: "#404040"

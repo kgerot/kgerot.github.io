@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resume
+title: Curriculum Vitae
 ---
 
 For a more detailed CV, see here: [CV PDF](assets/resources/resume.pdf).
@@ -12,7 +12,7 @@ For a more detailed CV, see here: [CV PDF](assets/resources/resume.pdf).
 University of Nebraska, Lincoln
 :   2018-2022 (expected)
 
-    **BSc, Computer Science**; **BSc, Mathematics**, *Minor: Statistics*; 
+    **BSc, Computer Science**; **BSc, Mathematics**, *Minor: Statistics*
 
 ## Experience
 

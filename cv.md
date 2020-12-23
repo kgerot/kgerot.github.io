@@ -9,7 +9,7 @@ For a more detailed CV, see here: [CV PDF](assets/resources/resume.pdf).
 
 ## Education
 
-2018-2020 (expected)
+2018-2022 (expected)
 :   **BSc, Computer Science**; **BSc, Mathematics**, *Minor: Statistics*; University of
     Nebraska, Lincoln
 

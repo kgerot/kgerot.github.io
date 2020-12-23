@@ -11,7 +11,7 @@ I've also completed Problem One in a few esoteric languages. These are by no mea
 
 ## Project Euler
 
-Project Euler is 
+[Project Euler](https://projecteuler.net/about) contains (to-date) 739 math problems of varying difficulty to be solved with programming. It is a good challenge for those trying out new langauges or, especially with higher difficulty problems, test their mathematics problem solving skills. Each problem has a forum with answers other people came up with that is only unlocked once you get the correct answer. If is easy to want to search the answers online, but actually solving the problems is much more satisfying. 
 
 ## Problem 1
 
@@ -26,30 +26,33 @@ Mathematically speaking, this problem is pretty easy.
 
 First we'll need to find all the numbers from 3 to 1000 that are divisible by 3 and all the numbers from 5 to 1000 that are divisible from 5.
 
-There are 333 terms from 1 to 1000 non-inclusive that are divisible by 3 (\\(\left\floor 1000/3 \right\floor\\)). Their sum is 
+There are 333 terms from 1 to 1000 non-inclusive that are divisible by 3 (truncated \\(1000/3\\)). Their sum is 
 \\[
-  3 \cdot 333 \cdot \frac{333 + 1}{2} = 166,833
+  3 \cdot 333 \cdot \frac{333 + 1}{2} = 166833
 \\]
 
-There are 199 terms from 1 to 1000 non-inclusive that are divisible by 5 (\\(\left\floor 1000/5 \right\floor\\)). Their sum is 
+There are 199 terms from 1 to 1000 non-inclusive that are divisible by 5. Their sum is 
 \\[
-  5 \cdot 199 \cdot \frac{199 + 1}{2} = 99,500
+  5 \cdot 199 \cdot \frac{199 + 1}{2} = 99500
 \\]
 
 Because the Least Common Multiple of 3 and 5 is 15, every number that divides 15 has been counted twice.
 
-There are 66 terms from 1 to 1000 non inclusive that are divisible by 15 (\\(\left\floor 1000/15 \right\floor\\)). Their sum is
+There are 66 terms from 1 to 1000 non inclusive that are divisible by 15. Their sum is
 \\[
-  15 \cdot 66 \cdot \frac{66 + 1}{2} = 33,165
+  15 \cdot 66 \cdot \frac{66 + 1}{2} = 33165
 \\]
 
 Thus, our final answer is 
 <details>
   <summary>Answer spoiler warning</summary>
+
+<!-- MarkdownTOC -->
 \\[
-  3166,833 + 99,500 - 33,165 = 233,168
+  3166833 + 99500 - 33165 = 233168
 \\]
-  
+<!-- /MarkdownTOC -->
+
 </details>
 
 Besides esoteric languages, I've solved this problem (as of 12/23/2020) in C, Python, Clojure, Haskell, and Swift. You can see these solution below
@@ -115,11 +118,11 @@ int gcd(int a, int b)
 } 
 ```
 
-Let's first define two arbitrary numbers \\(a\\) and \\(b\\) such that
-\\[
+Let's first define two arbitrary numbers \(a\) and \(b\) such that
+\[
   a = p^{m_1}_{1}\cdot p^{m_2}_{2}\cdot\dots\cdot p^{m_k}_{k}; \qquad
   b = p^{n_1}_{1}\cdot p^{n_2}_{2}\cdot\dots\cdot p^{n_k}_{k}
-\\]
+\]
 where \\(k\\) is the number of prime factors, \\(m_i, n_i\\) are integers such that \\(m_i, n_i \ge 0\\) and \\(0 < i \le k\\), and \\(p\\) is a unique prime number.
 
 By definition, the prime factorization of the LCM is

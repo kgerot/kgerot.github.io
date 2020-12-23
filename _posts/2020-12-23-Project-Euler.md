@@ -11,20 +11,20 @@ I've also completed Problem One in a few esoteric languages. These are by no mea
 
 ## Project Euler
 
-[Project Euler](https://projecteuler.net/about) contains (to-date) 739 math problems of varying difficulty to be solved with programming. It is a good challenge for those trying out new langauges or, especially with higher difficulty problems, test their mathematics problem solving skills. Each problem has a forum with answers other people came up with that is only unlocked once you get the correct answer. If is easy to want to search the answers online, but actually solving the problems is much more satisfying. 
+[Project Euler](https://projecteuler.net/about) contains (to-date) 739 math problems of varying difficulty to be solved with programming. It is a good challenge for those trying out new languages or, especially with higher difficulty problems, those testing their mathematics problem-solving skills. Each problem has a forum with answers other people came up with that is only unlocked once you get the correct answer. It is easy to want to search for the answers online, but solving the problems is much more satisfying. 
 
 ## Problem 1
 
 Problem one asks competitors to complete the following mathematical question:
 
-> If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+> If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6, and 9. The sum of these multiples is 23.
 >
 > Find the sum of all the multiples of 3 or 5 below 1000.
 
 Mathematically speaking, this problem is pretty easy. 
 
 
-First we'll need to find all the numbers from 3 to 1000 that are divisible by 3 and all the numbers from 5 to 1000 that are divisible from 5.
+First, we'll need to find all the numbers from 3 to 1000 that are divisible by 3 and all the numbers from 5 to 1000 that are divisible from 5.
 
 There are 333 terms from 1 to 1000 non-inclusive that are divisible by 3 (truncated \\(1000/3\\)). Their sum is 
 \\[
@@ -38,7 +38,7 @@ There are 199 terms from 1 to 1000 non-inclusive that are divisible by 5. Their 
 
 Because the Least Common Multiple of 3 and 5 is 15, every number that divides 15 has been counted twice.
 
-There are 66 terms from 1 to 1000 non inclusive that are divisible by 15. Their sum is
+There are 66 terms from 1 to 1000 (non-inclusive) that are divisible by 15. Their sum is
 \\[
   15 \cdot 66 \cdot \frac{66 + 1}{2} = 33165
 \\]
@@ -55,8 +55,7 @@ Thus, our final answer is
 
 </details>
 
-Besides esoteric languages, I've solved this problem (as of 12/23/2020) in C, Python, Clojure, Haskell, and Swift. You can see these solution below
-
+Besides esoteric languages, I've solved this problem (as of 12/23/2020) in C, Python, Clojure, Haskell, and Swift. You can see these solutions below
 
 [C Solution](#c-solution)
 
@@ -119,27 +118,34 @@ int gcd(int a, int b)
 ```
 
 Let's first define two arbitrary numbers \(a\) and \(b\) such that
-\[
+
+\\[
   a = p^{m_1}_{1}\cdot p^{m_2}_{2}\cdot\dots\cdot p^{m_k}_{k}; \qquad
   b = p^{n_1}_{1}\cdot p^{n_2}_{2}\cdot\dots\cdot p^{n_k}_{k}
-\]
+\\]
+
 where \\(k\\) is the number of prime factors, \\(m_i, n_i\\) are integers such that \\(m_i, n_i \ge 0\\) and \\(0 < i \le k\\), and \\(p\\) is a unique prime number.
 
 By definition, the prime factorization of the LCM is
+
 \\[
-  lcm(a, b) = p^{max(m_1, n_1)}_{1}\cdot p^{max(m_2, n_2)}_{2}\cdot\dots\cdot p^{max(m_k, n_k)}_{k}
+  lcm(a, b) = p^{max(m_1, n_1)}_{1} \cdot p^{max(m_2, n_2)}_{2} \cdot\dots\cdot p^{max(m_k, n_k)}_{k}
 \\]
+
 and the prime factorization of the GCD is
+
 \\[
   gcd(a, b) = p^{min(m_1, n_1)}_{1}\cdot p^{min(m_2, n_2)}_{2}\cdot\dots\cdot p^{min(m_k, n_k)}_{k}
 \\]
 
 Now, when we multiply the GCD and LCM together, we get
+
 \\[
   lcm(a,b)gcd(a, b) = p^{max(m_1, n_1) + min(m_1, n_1)}_{1}\cdot p^{max(m_2, n_2) + min(m_2, n_2)}_{2}\cdot\dots\cdot p^{max(m_k, n_k) + min(m_k, n_k)}_{k}
 \\]
 
-Knowing that, for any \\(x\\) and \\(y\\), \\(max(x, y) +  min(x,y) = x + y\\), we can simplify that uge formula to 
+Knowing that, for any \\(x\\) and \\(y\\), \\(max(x, y) +  min(x,y) = x + y\\), we can simplify that formula to 
+
 \\[
   lcm(a,b)gcd(a, b) = p^{m_1 + n_1}_{1}\cdot p^{m_2 + n_2}_{2}\cdot\dots\cdot p^{m_k + n_k}_{k} = \left(p^{m_1}_{1}\cdot p^{m_2}_{2}\cdot\dots\cdot p^{m_k}_{k}\right)\left(p^{n_1}_{1}\cdot p^{n_2}_{2}\cdot\dots\cdot p^{n_k}_{k}\right) = ab
 \\]
@@ -156,7 +162,7 @@ int greatest_multiple_lcm = n % lcm == 0 ? n - lcm : n - (n % lcm);
 
 The ternary is required because the program is not inclusive of the limit `n`.
 
-Next we compute the total number of integers that divide `a`, `b`, and `lcm` respectively.
+Next, we compute the total number of integers that divide `a`, `b`, and `lcm` respectively.
 
 ```c
 int total_div_a = greatest_multiple_a / a;

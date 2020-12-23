@@ -11,6 +11,6 @@ Beyond pure academics I'm a huge fan of learning random programming languages li
 
 See my resume below for more info
 
-<object data="myfile.pdf" type="application/pdf" width="100%" height="100%">
-  <a href="resume.pdf"></a>
+<object data="assets/resources/resume.pdf" type="application/pdf" width="100%" height="100%">
+  <a href="assets/resources/resume.pdf"></a>
 </object>

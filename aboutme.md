@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hi! I'm Katie Gerot. I'm a Computer Science and Mathematics major at the University of Nebraska, Lincoln. My Mathematics major has a specialization in Discrete Math and Cryptography, and I have a minor in Statistics.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I'm academically interested in machine learning and data science. Currently I am working at mastering (or as close as I can to mastering) convolutional neural networks. While I'm doing that, a few posts may pop up explaining my personal projects.
 
-What else do you need?
+Beyond pure academics I'm a huge fan of learning random programming languages like Brainf\*ck, ANTLR4, etc.
 
-### My story
+See my resume below for more info
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+<object data="myfile.pdf" type="application/pdf" width="100%" height="100%">
+  <a href="resume.pdf"></a>
+</object>

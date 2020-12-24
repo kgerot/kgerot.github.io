@@ -385,37 +385,102 @@ The add instruction is an E4 of any note type
 
 - G5 half-note (2 beats)
 - F5 dotted half-note (3 beats)
-- E5 quarter note (2 beats)
+- E5 quarter note (1 beat)
 - D5 dotted half-note (3 beats)
 
-There are 10 total beats excluding the instruction note so I'm going to use 12/16 time
+In order to minimize the number of beats per bar, I will make notes of the same length into a chord. This leads to a maximum of 10 beats per measure excluding the instruction. I will suse 12/4 time for those measures that are long (very few) and will seitch to 4/4 time for normal measures. Order doesn't matter with the notes because each has only one meaning that is context-free.
 
-So, applying this to my brainf\*ck program above, I get the following score where `o` represents a whole note (semibreve), `c` represents a quarter note (crotchet), `h` represents a half-note (minim), `h.` represents a dotted half, and `{` represents a rest.
+So, applying this to my brainf\*ck program above, I get the following score where `o` represents a whole note (semibreve), `c` represents a quarter note (crotchet), `h` represents a half-note (minim), and `h.` represents a dotted half. Only the notes where duration matters are labelled.
 
 ```
-E4d G5h F5h. E5d D5h.
-B4d F5h E5h. F5d C5h.
-C4d. < { D5d
-E4d. < { D5h. '
-B4d F5h E5h. F5d C5h.
-
-
-[         while cell01 is not 0
-  >+++    add 3 to cell02
-  [       while cell02 is not 0
-    >+      add 1 to cell03
-    >+      add 1 to cell04
-    <<-     subtract 1 from cell02
-  ]
-  >>      move to cell04
-  [       while cell04 is not 0
-    <<+     add 1 to cell02
-    >>-     subtract 1 from cell04
-  ]
-  <<<-    subtract 1 from cell01
-]
->
-
+E4 G5h F5h. E5d D5h.
+B4
+C4 D5d
+E4 D5h.
+B4
+C4 D5d
+E4 D5d
+C4 D5d
+E4 D5d
+D4 D5h
+F4 D5d
+C5
+C4 D5h
+B4
+D4 D5h
+E4 D5d
+C4 D5h
+F4 D5d
+C5
+D4 D5h.
+F4 D5d
+C5
+C4 D5d
+B4 D5d
+F4 D5d
+C5 D5d
+C4 D5d
+E4 G5d F5h E5o D5o
+B4
+C4 D5d
+E4 E5d
+B4
+C4 D5d
+E4 D5d
+C4 D5d
+E4 D5d
+D4 D5h
+F4 D5d
+C5
+C4 D5h
+B4
+D4 D5h
+E4 D5d
+C4 D5h
+F4 D5d
+C5
+D4 D5h.
+F4 D5d
+C5
+C4 D5d
+B4 D5d
+F4 D5d
+C5 D5d
+E4 F5h E5h. D5d
+D4 D5d
+B4
+C4 D5d
+E4 E5h.
+B4
+C4 D5d
+F4 D5d
+C4 D5d
+E4 D5d
+D4 D5h
+F4 D5d
+C5
+C4 D5h
+B4
+D4 D5h
+E4 D5d
+C4 D5h
+F4 D5d
+C5
+D4 D5h.
+F4 D5d
+C5
+C4 D5d
+B4
+F4 D5d
+C5
+C4 D5d
+B4
+D4 D5h
+E4 D5d
+C4 D5h
+F4 D5d
+C5
+D4 D5h
 ```
 
 ```
@@ -423,7 +488,7 @@ B4d F5h E5h. F5d C5h.
 |--|--/------------|-----
 |  ; /             |
 |--/-;-------------|-----
-| /  |          4  |
+| /  |         1 2 |
 |;---\_~~~_--------|-----
 ||   / \   \    4  |
 |\---\--\---]------|-----

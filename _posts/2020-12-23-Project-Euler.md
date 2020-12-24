@@ -156,7 +156,7 @@ Knowing that, for any \\(x\\) and \\(y\\), \\(max(x, y) +  min(x,y) = x + y\\), 
                   &= ab
 \end{align}
 
-Rearranging the equation, we get $lcm(a,b)gcd(a, b) = ab \implies lcm(a,b) = ab/gcd(a,b)$.
+Rearranging the equation, we get \\(lcm(a,b)gcd(a, b) = ab \implies lcm(a,b) = ab/gcd(a,b)\\).
 
 Next, the program computers the largest number under the limit that divisible by `a`, `b`, and `lcm`.
 

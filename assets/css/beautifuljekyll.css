@@ -32,23 +32,20 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
   font-size: 2.25rem;
-  color: {{ site.h1-col | default: "#FFFAFB" }};
 }
 h2 {
   font-size: 1.875rem;
-  color: {{ site.h1-col | default: "#FFFAFB" }};
 }
 h3 {
   font-size: 1.5rem;
-  color: {{ site.h1-col | default: "#FFFAFB" }};
+  color: {{ site.h3-col | default: "#000000" }};
 }
 h4 {
   font-size: 1.125rem;
-  color: {{ site.h1-col | default: "#FFFAFB" }};
+  color: {{ site.h4-col | default: "#000000" }};
 }
 h1, h2, h3, h4 {
   margin-top: 1.25rem;
-  color: {{ site.h1-col | default: "#404040" }};
 }
 a {
   color: {{ site.link-col | default: "#008AFF" }};
@@ -652,8 +649,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
   padding: 6.25rem 0;
-  color: #FFF;
-  text-shadow: 1px 1px 3px #000;
+  color: #e8e9f3;
 }
 .intro-header .page-heading h1 {
   margin-top: 0;

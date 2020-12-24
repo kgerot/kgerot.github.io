@@ -342,4 +342,95 @@ Which means the final program has about 6.007e29 zeros
 
 [Musical Note Problem 1]()
 
-This language is written entirely using quarter notes (crotchet), half notes (minim), dotted half notes (dotted minim), and whole notes (semibreve) of various pitches.
+This language is written entirely using quarter notes (crotchet), half notes (minim), dotted half notes (dotted minim), and whole notes (semibreve) of various pitches. There isn't a lot of information, so the following is what I have gathered. If you see an error, please email me and I will fix it.
+
+#### Bar
+
+Each bar contains one instruction and one number which indicates how many times it should be repeated. The instructions are similar to brainf\*ck and the comparison chart is below. If a note does not factor into an instruction, it can be added for interest's sake. (e.g. if a bar's instructions are only for the beginning of a loop, then other notes may be added in the bar without changing the code)
+
+| brainf\*ck | musical notes |
+| :----- | -----: |
+| >  | C4 |
+| <  | D4 |
+| +  | E4 |
+| -  | F4 |
+| .  | G4 |
+| ,  | A4 |
+| \[ | B4 |
+| \] | C5 |
+
+And the notes above C5 combine with the type of note to denote how many times the instruction is to be repeated. 
+
+| note | base 5 | decimal | note | base 5 | decimal |
+| :--- | :----: | ------: | :--- | :----: | ------: |
+| D5 crotchet | 00001 | 1 | G5 crotchet | 01000 | 125 |
+| D5 minim    | 00002 | 2 | G5 minim | 02000 | 250 |
+| D5 dotted minim  | 00003 | 3 | G5 dotted minim | 03000 | 375 |
+| D5 semibreve | 00004 | 4 | G5 semibreve | 04000 | 500 |
+| E5 crotchet | 00010 | 5 | A5 crotchet | 10000 | 500 |
+| E5 minim    | 00020 | 10 | A5 minim | 20000 | 1250 |
+| E5 dotted minim  | 00030 | 15 | A5 dotted minim | 30000 | 1875 |
+| E5 semibreve | 00040 | 20 | A5 semibreve | 40000 | 2500 |
+| F5 crotchet | 00100 | 25 |
+| F5 minim    | 00200 | 50 |
+| F5 dotted minim  | 00300 | 75 |
+| F5 semibreve | 00400 | 100 | 
+
+
+e.g. I want to add 333 to the current cell
+
+The add instruction is an E4 of any note type
+
+333 in base 5 is 2313 which translates to the notes (using american terminology)
+
+- G5 half-note (2 beats)
+- F5 dotted half-note (3 beats)
+- E5 quarter note (2 beats)
+- D5 dotted half-note (3 beats)
+
+There are 10 total beats excluding the instruction note so I'm going to use 12/16 time
+
+So, applying this to my brainf\*ck program above, I get the following score where `o` represents a whole note (semibreve), `c` represents a quarter note (crotchet), `h` represents a half-note (minim), `h.` represents a dotted half, and `{` represents a rest.
+
+```
+E4d G5h F5h. E5d D5h.
+B4d F5h E5h. F5d C5h.
+C4d. < { D5d
+E4d. < { D5h. '
+B4d F5h E5h. F5d C5h.
+
+
+[         while cell01 is not 0
+  >+++    add 3 to cell02
+  [       while cell02 is not 0
+    >+      add 1 to cell03
+    >+      add 1 to cell04
+    <<-     subtract 1 from cell02
+  ]
+  >>      move to cell04
+  [       while cell04 is not 0
+    <<+     add 1 to cell02
+    >>-     subtract 1 from cell04
+  ]
+  <<<-    subtract 1 from cell01
+]
+>
+
+```
+
+```
+   /``\
+|--|--/------------|-----
+|  ; /             |
+|--/-;-------------|-----
+| /  |          4  |
+|;---\_~~~_--------|-----
+||   / \   \    4  |
+|\---\--\---]------|-----
+| \    \ \ /       |
+|--`~~~~~~`--------|-----
+          _)
+
+```
+
+/

@@ -8,3 +8,274 @@ thumbnail-img: "https://i.ibb.co/CzsMKhT/pe-one-e-thumb.png"
 ---
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.
+
+For more detailed information on the solution and on Project Euler, go to the non-esoteric solution article [here](https://kgerot.github.io/2020-12-24-Project-Euler-1/).
+
+## Problem
+
+> If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6, and 9. The sum of these multiples is 23.
+>
+> Find the sum of all the multiples of 3 or 5 below 1000.
+
+[Brainf\*ck](#brainfck)
+
+[Unary](#unary)
+
+## Brainf\*ck
+
+[Esolangs Wiki's article on Brainf\*ck](https://esolangs.org/wiki/Brainfuck)
+
+[Code Snippet (Repl.it)](https://repl.it/@KatieGerot/pe-1-bf)
+
+*Note: the repl has similar comments as written in this article*
+
+Instead of printing the number I need, my implementation stores the answer in the first cell of the tape. The Repl above shows the first few cells and their values, which is how I know I have the correct answer. Furthermore, the repl.it compiler does not restrict the cell size as is common in other implementations. I will use the notation `cell01`, `cell02`, ... to mean cell 1, cell 2, ...
+
+To begin, let's add all the multiples of 3 under 1000
+
+We need to fill a cell with the total number of multiples (1000/3 = 333). We can do this using some rudimentary multiplication.
+
+We set `cell02` to 30 by first setting `cell03` to 6 and then adding 5 to `cell02` until `cell03` equals 0.
+
+```brainfuck
+>
+[
+  <<+
+  >>-
+]
+<<
+```
+
+Next, we multiply `cell02` by 10 and store the result in `cell01` and add 3 after that. We now have 333 in `cell01 `.
+
+```brainfuck
+[
+  <+++++++++++
+  >-
+]
+<+++
+```
+
+The following code is a little more complicated
+
+Essentially it will take every third number (starting at 3) and add
+it to a subtotal. The 333 we created in previous steps will act as our loop counter.
+
+The end result will be 166833 in `cell03` and 999 (the last digit divisible
+by 3 below 1000) in `cell02`
+
+In order to illumiate the process a little more I added line by line
+comments
+
+```brainfuck
+[         while cell01 is not 0
+  >+++    add 3 to cell02
+  [       while cell02 is not 0
+    >+      add 1 to cell03
+    >+      add 1 to cell04
+    <<-     subtract 1 from cell02
+  ]
+  >>      move to cell04
+  [       while cell04 is not 0
+    <<+     add 1 to cell02
+    >>-     subtract 1 from cell04
+  ]
+  <<<-    subtract 1 from cell01
+]
+>
+```
+
+This code simply clears the current cell which is `cell02`
+
+```brainfuck
+[-]
+```
+
+BNow we can move on to the multiples of 5 using a very similar process to above. The total number of multiples is 1000/5 = 199.
+
+We can use multiplication to set `cell02` to 20 by setting `cell01` to 5 and then adding 4 to `cell02` until `cell01` is 0
+
+```brainfuck
+<+++++
+[
+  >++++
+  <-
+]
+>
+```
+
+Then we can multiply the 20 in `cell04` by 10 and store the resulting 200 in `cell01`. After, we can subtract 1 to get 199
+
+```brainfuck
+[
+  <++++++++++
+  >-
+]
+<-
+```
+
+Similarly to above, we will now add every fifth integer to `cell03` to get a subtotal of 266333.
+
+```brainfuck
+[
+  >+++++
+  [
+    >+
+    >+
+    <<-
+  ]
+  >>
+  [
+    <<+
+    >>-
+  ]
+  <<<-
+]
+>
+[-]
+```
+
+We know the lcm of 5 and 3 is 15, so now we are going to use the
+same process as above to subtract the mutliples of 15.
+
+Set `cell01` to 66
+
+```brainfuck
++++++++++++
+[
+  <++++++
+  >-
+]
+```
+
+Subtract every 15th number
+
+```brainfuck
+<
+[
+  >+++++++++++++++
+  [
+    >-
+    >+
+    <<-
+  ]
+  >>
+  [
+    <<+
+    >>-
+  ]
+  <<<-
+]
+>
+[-]
+```
+
+And finally we can move the correct answer (233168) into `cell01`
+
+```brainfuck
+>
+[
+  <<+
+  >>-
+]
+<<
+```
+
+The final formatted code is 
+
+```brainfuck
+>>++++++
+[
+  <+++++
+  >-
+]
+<
+[
+  <+++++++++++
+  >-
+]
+<+++
+[         
+  >+++    
+  [      
+    >+     
+    >+     
+    <<- 
+  ]
+  >>      
+  [       
+    <<+   
+    >>-   
+  ]
+  <<<- 
+]
+>
+[-]
+<+++++
+[
+  >++++
+  <-
+]
+>
+[
+  <++++++++++
+  >-
+]
+<-
+[
+  >+++++
+  [
+    >+
+    >+
+    <<-
+  ]
+  >>
+  [
+    <<+
+    >>-
+  ]
+  <<<-
+]
+>
+[-]
++++++++++++
+[
+  <++++++
+  >-
+]
+<
+[
+  >+++++++++++++++
+  [
+    >-
+    >+
+    <<-
+  ]
+  >>
+  [
+    <<+
+    >>-
+  ]
+  <<<-
+]
+>
+[-]
+>
+[
+  <<+
+  >>-
+]
+<<
+```
+
+And condensed code is
+
+```brainfuck
+>>++++++[<+++++>-]<[<+++++++++++>-]<+++[>+++[>+>+<<-]>>[<<+>>-]<<<-]>[-]<+++++[>++++<-]>[<++++++++++>-]<-[>+++++[>+>+<<-]>>[<<+>>-]<<<-]>[-]+++++++++++[<++++++>-]<[>+++++++++++++++[>->+<<-]>>[<<+>>-]<<<-]>[-]>[<<+>>-]<<
+```
+
+## Unary
+
+[Esolangs Wiki's article on Unary](https://esolangs.org/wiki/Unary)
+
+[Code Snippet]()

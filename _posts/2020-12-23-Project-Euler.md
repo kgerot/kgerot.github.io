@@ -3,6 +3,7 @@ layout: post
 title: Project Euler - Problem 1
 subtitle: How I solved Problem 1 in a variety of languages
 thumbnail: assets/img/euler_portrait.png
+use_math = true
 ---
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.
@@ -26,33 +27,29 @@ Mathematically speaking, this problem is pretty easy.
 
 First, we'll need to find all the numbers from 3 to 1000 that are divisible by 3 and all the numbers from 5 to 1000 that are divisible from 5.
 
-There are 333 terms from 1 to 1000 non-inclusive that are divisible by 3 (truncated \\(1000/3\\)). Their sum is 
-\\[
+There are 333 terms from 1 to 1000 non-inclusive that are divisible by 3 (truncated $1000/3$). Their sum is 
+$$
   3 \cdot 333 \cdot \frac{333 + 1}{2} = 166833
-\\]
+$$
 
 There are 199 terms from 1 to 1000 non-inclusive that are divisible by 5. Their sum is 
-\\[
+$$
   5 \cdot 199 \cdot \frac{199 + 1}{2} = 99500
-\\]
+$$
 
 Because the Least Common Multiple of 3 and 5 is 15, every number that divides 15 has been counted twice.
 
 There are 66 terms from 1 to 1000 (non-inclusive) that are divisible by 15. Their sum is
-\\[
+$$
   15 \cdot 66 \cdot \frac{66 + 1}{2} = 33165
-\\]
+$$
 
 Thus, our final answer is 
 <details>
   <summary>Answer spoiler warning</summary>
-
-<!-- MarkdownTOC -->
-\\[
+$$
   3166833 + 99500 - 33165 = 233168
-\\]
-<!-- /MarkdownTOC -->
-
+$$
 </details>
 
 Besides esoteric languages, I've solved this problem (as of 12/23/2020) in C, Python, Clojure, Haskell, and Swift. You can see these solutions below
@@ -119,38 +116,40 @@ int gcd(int a, int b)
 
 Let's first define two arbitrary numbers \(a\) and \(b\) such that
 
-\\[
-  a = p^{m_1}_{1}\cdot p^{m_2}_{2}\cdot\dots\cdot p^{m_k}_{k}; \qquad
-  b = p^{n_1}_{1}\cdot p^{n_2}_{2}\cdot\dots\cdot p^{n_k}_{k}
-\\]
+$$
+  a = p^{m _ 1} _ {1}\cdot p^{m _ 2} _ {2}\cdot\dots\cdot p^{m _ k} _ {k}
+$$
+$$
+  b = p^{n _ 1} _ {1}\cdot p^{n _ 2} _ {2}\cdot\dots\cdot p^{n _ k} _ {k}
+$$
 
-where \\(k\\) is the number of prime factors, \\(m_i, n_i\\) are integers such that \\(m_i, n_i \ge 0\\) and \\(0 < i \le k\\), and \\(p\\) is a unique prime number.
+where $k$ is the number of prime factors, $m _ i, n _ i$ are integers such that $m _ i, n _ i \ge 0$ and $0 < i \le k$, and $p$ is a unique prime number.
 
 By definition, the prime factorization of the LCM is
 
-\\[
-  lcm(a, b) = p^{max(m_1, n_1)}_{1} \cdot p^{max(m_2, n_2)}_{2} \cdot\dots\cdot p^{max(m_k, n_k)}_{k}
-\\]
+$$
+  lcm(a, b) = p^{max(m _ 1, n _ 1)} _ {1} \cdot p^{max(m _ 2, n _ 2)} _ {2} \cdot\dots\cdot p^{max(m _ k, n _ k)} _ {k}
+$$
 
 and the prime factorization of the GCD is
 
-\\[
-  gcd(a, b) = p^{min(m_1, n_1)}_{1}\cdot p^{min(m_2, n_2)}_{2}\cdot\dots\cdot p^{min(m_k, n_k)}_{k}
-\\]
+$$
+  gcd(a, b) = p^{min(m _ 1, n _ 1)} _ {1}\cdot p^{min(m _ 2, n _ 2)} _ {2}\cdot\dots\cdot p^{min(m _ k, n _ k)} _ {k}
+$$
 
 Now, when we multiply the GCD and LCM together, we get
 
-\\[
-  lcm(a,b)gcd(a, b) = p^{max(m_1, n_1) + min(m_1, n_1)}_{1}\cdot p^{max(m_2, n_2) + min(m_2, n_2)}_{2}\cdot\dots\cdot p^{max(m_k, n_k) + min(m_k, n_k)}_{k}
-\\]
+$$
+  lcm(a,b)gcd(a, b) = p^{max(m _ 1, n _ 1) + min(m _ 1, n _ 1)} _ {1}\cdot p^{max(m _ 2, n _ 2) + min(m _ 2, n _ 2)} _ {2}\cdot\dots\cdot p^{max(m _ k, n _ k) + min(m _ k, n _ k)} _ {k}
+$$
 
-Knowing that, for any \\(x\\) and \\(y\\), \\(max(x, y) +  min(x,y) = x + y\\), we can simplify that formula to 
+Knowing that, for any $x$ and $y$, $max(x, y) +  min(x,y) = x + y$, we can simplify that formula to 
 
-\\[
-  lcm(a,b)gcd(a, b) = p^{m_1 + n_1}_{1}\cdot p^{m_2 + n_2}_{2}\cdot\dots\cdot p^{m_k + n_k}_{k} = \left(p^{m_1}_{1}\cdot p^{m_2}_{2}\cdot\dots\cdot p^{m_k}_{k}\right)\left(p^{n_1}_{1}\cdot p^{n_2}_{2}\cdot\dots\cdot p^{n_k}_{k}\right) = ab
-\\]
+$$
+  lcm(a,b)gcd(a, b) = p^{m _ 1 + n _ 1} _ {1}\cdot p^{m _ 2 + n _ 2} _ {2}\cdot\dots\cdot p^{m _ k + n _ k} _ {k} = \left(p^{m _ 1} _ {1}\cdot p^{m _ 2} _ {2}\cdot\dots\cdot p^{m _ k} _ {k}\right)\left(p^{n _ 1} _ {1}\cdot p^{n _ 2} _ {2}\cdot\dots\cdot p^{n _ k} _ {k}\right) = ab
+$$
 
-Rearranging the equation, we get \\(lcm(a,b)gcd(a, b) = ab \implies lcm(a,b) = ab/gcd(a,b)\\).
+Rearranging the equation, we get $lcm(a,b)gcd(a, b) = ab \implies lcm(a,b) = ab/gcd(a,b)$.
 
 Next, the program computers the largest number under the limit that divisible by `a`, `b`, and `lcm`.
 

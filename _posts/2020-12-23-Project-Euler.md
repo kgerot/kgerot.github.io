@@ -26,11 +26,11 @@ Mathematically speaking, this problem is pretty easy.
 
 First, we'll need to find all the numbers from 3 to 1000 that are divisible by 3 and all the numbers from 5 to 1000 that are divisible from 5.
 
-There are 333 terms from 1 to 1000 non-inclusive that are divisible by 3 (truncated $1000/3$). Their sum is 
+There are 333 terms from 1 to 1000 non-inclusive that are divisible by 3 (truncated \\(1000/3\\)). Their sum is 
 
-$$
+\\[
   3 \cdot 333 \cdot \frac{333 + 1}{2} = 166833
-$$
+\\]
 
 There are 199 terms from 1 to 1000 non-inclusive that are divisible by 5. Their sum is 
 

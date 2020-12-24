@@ -136,9 +136,7 @@
 
   {% include matomo.html %}
 
-  {% if page.use_math %}
   {% include mathjax_support.html %}
-  {% endif %}
   
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">

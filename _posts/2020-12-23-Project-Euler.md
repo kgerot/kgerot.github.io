@@ -6,6 +6,8 @@ tags: ["project-euler"]
 thumbnail: assets/img/euler_portrait.png
 ---
 
+UPDATE
+
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.
 
 I've also completed Problem One in a few esoteric languages. These are by no means practical, but they are fun! See [here](insert-link-to-article-here) for my article on them.

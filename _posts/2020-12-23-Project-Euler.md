@@ -3,7 +3,7 @@ layout: post
 title: Project Euler - Problem 1
 subtitle: How I solved Problem 1 in a variety of languages
 tags: ["project-euler"]
-thumbnail: assets/img/euler_portrait.png
+cover-img: assets/img/pe-one-ne.png
 ---
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.

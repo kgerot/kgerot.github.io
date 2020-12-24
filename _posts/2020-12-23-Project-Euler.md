@@ -4,12 +4,12 @@ title: Project Euler - Problem 1
 subtitle: How I solved Problem 1 in a variety of languages
 tags: ["project-euler"]
 cover-img: "https://i.ibb.co/4m2RTsC/pe-one-ne.jpg"
-thumbnail-img: "https://i.ibb.co/xjxZQRY/pe-badge-ne.png"
+thumbnail-img: "https://i.ibb.co/7NRFvwM/pe-one-ne-thumb.png"
 ---
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.
 
-I've also completed Problem One in a few esoteric languages. These are by no means practical, but they are fun! See [here](insert-link-to-article-here) for my article on them.
+I've also completed Problem One in a few esoteric languages. These are by no means practical, but they are fun! See [here](https://kgerot.github.io/2020-12-23-Project-Euler-Esoteric/) for my article on them.
 
 ## Project Euler
 

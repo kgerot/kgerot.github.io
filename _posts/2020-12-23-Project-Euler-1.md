@@ -3,7 +3,7 @@ layout: post
 title: Project Euler - Problem 1
 subtitle: How I solved Problem 1 in a variety of languages
 tags: ["project-euler"]
-cover-img: "https://i.ibb.co/4m2RTsC/pe-one-ne.jpg"
+cover-img: "https://i.ibb.co/J2pG2Fq/pe-one-ne.png"
 thumbnail-img: "https://i.ibb.co/7NRFvwM/pe-one-ne-thumb.png"
 ---
 

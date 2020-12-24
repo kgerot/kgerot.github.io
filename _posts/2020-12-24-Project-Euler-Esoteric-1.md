@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project Euler - Problem 1 (Esoteric)
-subtitle: Solution to Problem 1 in Brainf\*ck and derivative languages
+subtitle: Solution to Problem 1 in Brainf*ck and derivative languages
 tags: ["project-euler", "esoteric"]
 cover-img: "https://i.ibb.co/nQRv4cg/pe-one-e.png"
 thumbnail-img: "https://i.ibb.co/CzsMKhT/pe-one-e-thumb.png"

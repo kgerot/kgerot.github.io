@@ -6,7 +6,7 @@ tags: ["project-euler"]
 thumbnail: assets/img/euler_portrait.png
 ---
 
-UPDATE
+UPDATE2
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.
 

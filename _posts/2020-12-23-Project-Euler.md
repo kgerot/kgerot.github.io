@@ -52,7 +52,7 @@ Thus, our final answer is
   <summary>Answer spoiler warning</summary>
   
 $$
-  3166833 + 99500 - 33165 = 233168
+  166833 + 99500 - 33165 = 233168
 $$
 
 </details>

@@ -151,13 +151,11 @@ $$
 
 Knowing that, for any \\(x\\) and \\(y\\), \\(max(x, y) +  min(x,y) = x + y\\), we can simplify that formula to 
 
-\begin{align}
+$$
   lcm(a,b)gcd(a, b) &= p^{m _ 1 + n _ 1} _ {1}\cdot p^{m _ 2 + n _ 2} _ {2}\cdot\dots\cdot p^{m _ k + n _ k} _ {k} \\
-  
-                  &= \left(p^{m _ 1} _ {1}\cdot p^{m _ 2} _ {2}\cdot\dots\cdot p^{m _ k} _ {k}\right)\left(p^{n _ 1} _ {1}\cdot p^{n _ 2} _ {2}\cdot\dots\cdot p^{n _ k} _ {k}\right) \\
-                  
-                  &= ab
-\end{align}
+&= \left(p^{m _ 1} _ {1}\cdot p^{m _ 2} _ {2}\cdot\dots\cdot p^{m _ k} _ {k}\right)\left(p^{n _ 1} _ {1}\cdot p^{n _ 2} _ {2}\cdot\dots\cdot p^{n _ k} _ {k}\right) \\
+&= ab
+$$
 
 Rearranging the equation, we get \\(lcm(a,b)gcd(a, b) = ab \implies lcm(a,b) = ab/gcd(a,b)\\).
 

@@ -1,5 +1,5 @@
 ---
-layout: ip
+layout: page
 title: Project Euler - Problem 1 (Esoteric)
 subtitle: How I solved Problem 1 in esoteric languages
 tags: ["project-euler", "esoteric"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project Euler - Problem 1 (Esoteric)
-subtitle: How I solved Problem 1 in esoteric languages
+subtitle: Solution to Problem 1 in Brainf\*ck and derivative languages
 tags: ["project-euler", "esoteric"]
 cover-img: "https://i.ibb.co/nQRv4cg/pe-one-e.png"
 thumbnail-img: "https://i.ibb.co/CzsMKhT/pe-one-e-thumb.png"
@@ -20,6 +20,8 @@ For more detailed information on the solution and on Project Euler, go to the no
 [Brainf\*ck](#brainfck)
 
 [Unary](#unary)
+
+[Musical Notes](#musical-notes)
 
 ## Brainf\*ck
 
@@ -316,7 +318,7 @@ Concatenate them and prepend a 1
 
 Convert to Unary using the process detailed [here](https://esolangs.org/wiki/Binary_to_unary_conversion) gives 911 zeros.
 
-```
+`
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -327,7 +329,7 @@ Convert to Unary using the process detailed [here](https://esolangs.org/wiki/Bin
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00000000000000000000000000000000000000
-```
+`
 
 This is one of the simplest functions and yest there are almost a thousand zeros. It becomes impractical to write out all the zeros, so it is standard to just write the number of zeros in the program. An easy way to calculate this is to 
 
@@ -337,9 +339,11 @@ This is one of the simplest functions and yest there are almost a thousand zeros
 
 So, the solution for problem 1 of Project Euler is
 
-```
+`
 60067791343660773572262032436683172366814950097798487931195820848870525803770097446916452184853281
 7414535340560172596551169832045969986967786983998906954271212278986415166831421519312167985153050569
-```
+`
 
 Which means the final program has about 6.007e29 zeros
+
+## Musical Notes

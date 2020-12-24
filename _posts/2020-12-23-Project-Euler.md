@@ -72,6 +72,7 @@ Besides esoteric languages, I've solved this problem (as of 12/23/2020) in C, Py
 ## C Solution
 
 Link to solution 1 repl.it : [C Repl Sol 1 - Problem 1 - Project Euler](https://repl.it/@KatieGerot/pe1-c-iterative)
+
 Link to solution 2 repl.it : [C Repl Sol 2 - Problem 1 - Project Euler](https://repl.it/@KatieGerot/pe1-c-math)
 
 Link to solution on Github : [C Blob - Problem 1 - Project Euler](https://github.com/kgerot/Project-Euler/blob/master/C/1.c)

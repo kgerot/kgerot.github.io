@@ -27,11 +27,13 @@ Mathematically speaking, this problem is pretty easy.
 First, we'll need to find all the numbers from 3 to 1000 that are divisible by 3 and all the numbers from 5 to 1000 that are divisible from 5.
 
 There are 333 terms from 1 to 1000 non-inclusive that are divisible by 3 (truncated $1000/3$). Their sum is 
+
 $$
   3 \cdot 333 \cdot \frac{333 + 1}{2} = 166833
 $$
 
 There are 199 terms from 1 to 1000 non-inclusive that are divisible by 5. Their sum is 
+
 $$
   5 \cdot 199 \cdot \frac{199 + 1}{2} = 99500
 $$
@@ -39,6 +41,7 @@ $$
 Because the Least Common Multiple of 3 and 5 is 15, every number that divides 15 has been counted twice.
 
 There are 66 terms from 1 to 1000 (non-inclusive) that are divisible by 15. Their sum is
+
 $$
   15 \cdot 66 \cdot \frac{66 + 1}{2} = 33165
 $$
@@ -46,9 +49,11 @@ $$
 Thus, our final answer is 
 <details>
   <summary>Answer spoiler warning</summary>
+  
 $$
   3166833 + 99500 - 33165 = 233168
 $$
+
 </details>
 
 Besides esoteric languages, I've solved this problem (as of 12/23/2020) in C, Python, Clojure, Haskell, and Swift. You can see these solutions below
@@ -113,11 +118,12 @@ int gcd(int a, int b)
 } 
 ```
 
-Let's first define two arbitrary numbers \(a\) and \(b\) such that
+Let's first define two arbitrary numbers \$a\$ and \$b\$ such that
 
 $$
   a = p^{m _ 1} _ {1}\cdot p^{m _ 2} _ {2}\cdot\dots\cdot p^{m _ k} _ {k}
 $$
+
 $$
   b = p^{n _ 1} _ {1}\cdot p^{n _ 2} _ {2}\cdot\dots\cdot p^{n _ k} _ {k}
 $$

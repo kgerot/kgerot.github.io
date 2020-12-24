@@ -3,7 +3,6 @@ layout: post
 title: Project Euler - Problem 1
 subtitle: How I solved Problem 1 in a variety of languages
 thumbnail: assets/img/euler_portrait.png
-use_math = true
 ---
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.

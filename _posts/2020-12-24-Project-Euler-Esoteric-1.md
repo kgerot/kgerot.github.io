@@ -46,15 +46,17 @@ We set `cell02` to 30 by first setting `cell03` to 6 and then adding 5 to `cell0
 <<
 ```
 
-Next, we multiply `cell02` by 10 and store the result in `cell01` and add 3 after that. We now have 333 in `cell01 `.
+Next, we multiply `cell02` by 10 and store the result in `cell01` and add 3 after that. We now have 333 in `cell01 `. 
 
-~~~brainfuck
+*At this point, Jekyll has decided that most of my code is comments and is formatting as such*
+
+```brainfuck
 [
   <+++++++++++
   >-
 ]
 <+++
-~~~
+```
 
 The following code is a little more complicated
 

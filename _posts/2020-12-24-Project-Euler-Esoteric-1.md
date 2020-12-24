@@ -50,8 +50,8 @@ Next, we multiply `cell02` by 10 and store the result in `cell01` and add 3 afte
 
 ```brainfuck
 [
-  <+++++++++++
-  >-
+<+++++++++++
+>-
 ]
 <+++
 ```

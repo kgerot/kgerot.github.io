@@ -118,7 +118,7 @@ int gcd(int a, int b)
 } 
 ```
 
-Let's first define two arbitrary numbers \$a\$ and \$b\$ such that
+Let's first define two arbitrary numbers \\(a\\) and \\(b\\) such that
 
 $$
   a = p^{m _ 1} _ {1}\cdot p^{m _ 2} _ {2}\cdot\dots\cdot p^{m _ k} _ {k}
@@ -128,7 +128,7 @@ $$
   b = p^{n _ 1} _ {1}\cdot p^{n _ 2} _ {2}\cdot\dots\cdot p^{n _ k} _ {k}
 $$
 
-where $k$ is the number of prime factors, $m _ i, n _ i$ are integers such that $m _ i, n _ i \ge 0$ and $0 < i \le k$, and $p$ is a unique prime number.
+where \\(k\\) is the number of prime factors, \\(m _ i, n _ i\\) are integers such that \\(m _ i, n _ i \ge 0\\) and \\(0 < i \le k\\), and \\(p\\) is a unique prime number.
 
 By definition, the prime factorization of the LCM is
 
@@ -148,7 +148,7 @@ $$
   lcm(a,b)gcd(a, b) = p^{max(m _ 1, n _ 1) + min(m _ 1, n _ 1)} _ {1}\cdot p^{max(m _ 2, n _ 2) + min(m _ 2, n _ 2)} _ {2}\cdot\dots\cdot p^{max(m _ k, n _ k) + min(m _ k, n _ k)} _ {k}
 $$
 
-Knowing that, for any $x$ and $y$, $max(x, y) +  min(x,y) = x + y$, we can simplify that formula to 
+Knowing that, for any \\(x\\) and \\(y\\), \\(max(x, y) +  min(x,y) = x + y\\), we can simplify that formula to 
 
 $$
   lcm(a,b)gcd(a, b) = p^{m _ 1 + n _ 1} _ {1}\cdot p^{m _ 2 + n _ 2} _ {2}\cdot\dots\cdot p^{m _ k + n _ k} _ {k} = \left(p^{m _ 1} _ {1}\cdot p^{m _ 2} _ {2}\cdot\dots\cdot p^{m _ k} _ {k}\right)\left(p^{n _ 1} _ {1}\cdot p^{n _ 2} _ {2}\cdot\dots\cdot p^{n _ k} _ {k}\right) = ab

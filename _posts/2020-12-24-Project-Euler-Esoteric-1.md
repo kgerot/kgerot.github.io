@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project Euler - Problem 1 (Esoteric)
-subtitle: Solution to Problem 1 in Brainf*ck and Unary
+subtitle: Solution to Problem 1 in brainf***, P", and Unary
 tags: ["project-euler", "esoteric", "brainf"]
 cover-img: "https://i.ibb.co/nQRv4cg/pe-one-e.png"
 thumbnail-img: "https://i.ibb.co/CzsMKhT/pe-one-e-thumb.png"
@@ -17,13 +17,15 @@ For more detailed information on the solution and on Project Euler, go to the no
 >
 > Find the sum of all the multiples of 3 or 5 below 1000.
 
-[Brainf\*ck](#brainfck)
+[Brainf\*ck](#brainf)
+
+[P\"](#p)
 
 [Unary](#unary)
 
-## Brainf\*ck
+## Brainf\*\*\*
 
-[Esolangs Wiki's article on Brainf\*ck](https://esolangs.org/wiki/Brainfuck)
+[Esolangs Wiki's article on Brainf\*\*\*](https://esolangs.org/wiki/Brainfuck)
 
 [Code Snippet (Repl.it)](https://repl.it/@KatieGerot/pe-1-bf)
 
@@ -276,9 +278,37 @@ And condensed code is
 >>++++++[<+++++>-]<[<+++++++++++>-]<+++[>+++[>+>+<<-]>>[<<+>>-]<<<-]>[-]<+++++[>++++<-]>[<++++++++++>-]<-[>+++++[>+>+<<-]>>[<<+>>-]<<<-]>[-]+++++++++++[<++++++>-]<[>+++++++++++++++[>->+<<-]>>[<<+>>-]<<<-]>[-]>[<<+>>-]<<
 ```
 
+## P\"
+
+[Esolangs Wiki's article on P\"](https://esolangs.org/wiki/P′′)
+
+[Wikipedia Article on P\"](https://en.wikipedia.org/wiki/P%E2%80%B2%E2%80%B2)
+
+Easily enough, P" uses instructions equivalent to all brainf\*\*\* instructions excluding I/O. I don't use any I/O in my code above. *Note: P\" came first and no one is sure if brainf\*\*\* is derivative or developed on its own.*
+
+P\" has four symbols in its alphabet--- \\(\{ R, \lambda, \(, \) \} \\). This alphabet can form the words \\(r, r', L, R\\) where \\(r \equiv \lambda R\\), \\(r' \equiv r^n\\) (where \\(r^n\\) is the \\(n\\)th iterate of \\(r\\)), \\(: \equiv r'\lambda\\) 
+
+Here are the translations from brainf\*\*\* instructions to P\" words:
+
+| brainf\*\*\* | P\" |
+| :----------: |:--: |
+| >            | R   |
+| <            | L   |
+| +            | r   |
+| -            | r'  |
+| \[           | \(  |
+| \]           | \)  |
+
+So the tranlation of my brainf\*\*\* program to P\" is:
+
+$$
+RRrrrrrr(LrrrrrRr')L(LrrrrrrrrrrrRr')Lrrr(Rrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')Lrrrrr(RrrrrLr')R(LrrrrrrrrrrRr')Lr'(Rrrrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')rrrrrrrrrrr(LrrrrrrRr')L(Rrrrrrrrrrrrrrrr(Rr'RrLLr')RR(LLrRRr')LLLr')R(r')R(LLrRRr')LL
+$$
+
 ## Unary
 
 [Esolangs Wiki's article on Unary](https://esolangs.org/wiki/Unary)
+
 
 Unary is programmed by
 

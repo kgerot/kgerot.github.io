@@ -290,19 +290,21 @@ P\" has four symbols in its alphabet--- \\(\{ R, \lambda, \(, \) \} \\). This al
 
 Here are the translations from brainf\*\*\* instructions to P\" words:
 
-| brainf\*\*\* | P\" |
-| :----------: |:--: |
-| >            | R   |
-| <            | L   |
-| +            | r   |
-| -            | r'  |
-| \[           | \(  |
-| \]           | \)  |
+| brainf\*\*\* | P\"       |
+| :----------: |:--:       |
+| >            | \\(R\\)   |
+| <            | \\(L\\)   |
+| +            | \\(r\\)   |
+| -            | \\(r'\\)  |
+| \[           | \\(\(\\)  |
+| \]           | \\(\)\\)  |
 
 So the tranlation of my brainf\*\*\* program to P\" is:
 
 $$
-RRrrrrrr(LrrrrrRr')L(LrrrrrrrrrrrRr')Lrrr(Rrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')Lrrrrr(RrrrrLr')R(LrrrrrrrrrrRr')Lr'(Rrrrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')rrrrrrrrrrr(LrrrrrrRr')L(Rrrrrrrrrrrrrrrr(Rr'RrLLr')RR(LLrRRr')LLLr')R(r')R(LLrRRr')LL
+RRrrrrrr(LrrrrrRr')L(LrrrrrrrrrrrRr')Lrrr(Rrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')Lrrrrr(RrrrrLr')\\\
+R(LrrrrrrrrrrRr')Lr'(Rrrrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')rrrrrrrrrrr(LrrrrrrRr')L(Rrrrrrrrrrr\\\
+rrrrr(Rr'RrLLr')RR(LLrRRr')LLLr')R(r')R(LLrRRr')LL
 $$
 
 ## Unary

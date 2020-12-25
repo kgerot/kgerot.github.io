@@ -311,8 +311,8 @@ So the tranlation of my brainf\*\*\* program to P\" is:
 
 Unary is programmed by
 
-1. Writing the code in Brainf\*ck
-2. Converting the Brainf\*ck code to binary using the table below
+1. Writing the code in brainf\*\*\*
+2. Converting the brainf\*\*\* code to binary using the table below
 3. Concatenate all the binary numbers an prepend a 1 to the whole binary number
 4. Convert to unary using the digit 0
 

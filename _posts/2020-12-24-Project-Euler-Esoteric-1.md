@@ -4,7 +4,6 @@ title: Project Euler - Problem 1 (Esoteric)
 subtitle: Solution to Problem 1 in brainf***, P", and Unary
 tags: ["project-euler", "esoteric", "brainf"]
 cover-img: "https://i.ibb.co/nQRv4cg/pe-one-e.png"
-thumbnail-img: "https://i.ibb.co/CzsMKhT/pe-one-e-thumb.png"
 ---
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.

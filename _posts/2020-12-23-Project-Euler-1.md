@@ -4,7 +4,6 @@ title: Project Euler - Problem 1
 subtitle: How I solved Problem 1 in a variety of languages
 tags: ["project-euler"]
 cover-img: "https://i.ibb.co/J2pG2Fq/pe-one-ne.png"
-thumbnail-img: "https://i.ibb.co/7NRFvwM/pe-one-ne-thumb.png"
 ---
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.

@@ -71,7 +71,7 @@ be repeated.
 | A5 semibreve | 40000 | 2500 |
 
 
-e.g. I want to add 333 to the current cell
+**Example**: I want to add 333 to the current cell
 
 The add instruction is an E4 of any note type
 
@@ -86,12 +86,12 @@ The add instruction is an E4 of any note type
 
 In order to minimize the number of beats per bar, I will make notes of the same length into a chord.
 This leads to a maximum of 10 beats per measure excluding the instruction. I will use 4/4 time and
-split up instructions that have durations beyond that or dondense into a chord. Order doesn't matter
+split up instructions that have durations beyond that or condense into a chord. Order doesn't matter
 with the notes inside a bar because each has only one meaning that is context-free. But, in order to
 keep this problem as simple as possible, I did not alter the order or add more notes to a bar.
 
-So, applying this to my brainf program above, I get the following score where `o` represents a
-whole note (semibreve), `c` represents a quarter note (crotchet), `h` represents a half-note (minim),
+Applying this to my brainf program above, I get the following score where `o` represents a
+whole note (semibreve), `d` represents a quarter note (crotchet), `h` represents a half-note (minim),
 and `h.` represents a dotted half. Only the notes where duration matters are labelled.
 
 ```

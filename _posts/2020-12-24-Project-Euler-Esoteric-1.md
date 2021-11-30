@@ -41,25 +41,14 @@ We need to fill a cell with the total number of multiples (1000/3 = 333). We can
 
 We set `cell02` to 30 by first setting `cell03` to 6 and then adding 5 to `cell02` until `cell03` equals 0.
 
-```brainfuck
->
-[
-  <<+
-  >>-
-]
-<<
+```text
+>[<<+>>-]<<
 ```
 
 Next, we multiply `cell02` by 10 and store the result in `cell01` and add 3 after that. We now have 333 in `cell01 `. 
 
-*At this point, Jekyll has decided that most of my code is comments and is formatting as such*
-
-```brainfuck
-[
-  <+++++++++++
-  >-
-]
-<+++
+```text
+[<+++++++++++>-]<+++
 ```
 
 The following code is a little more complicated
@@ -73,7 +62,7 @@ by 3 below 1000) in `cell02`
 In order to illumiate the process a little more I added line by line
 comments
 
-```brainfuck
+```text
 [         while cell01 is not 0
   >+++    add 3 to cell02
   [       while cell02 is not 0
@@ -93,7 +82,7 @@ comments
 
 This code simply clears the current cell which is `cell02`
 
-```brainfuck
+```text
 [-]
 ```
 
@@ -101,44 +90,21 @@ BNow we can move on to the multiples of 5 using a very similar process to above.
 
 We can use multiplication to set `cell02` to 20 by setting `cell01` to 5 and then adding 4 to `cell02` until `cell01` is 0
 
-```brainfuck
-<+++++
-[
-  >++++
-  <-
-]
->
+```text
+<+++++[>++++<-]>
 ```
 
 Then we can multiply the 20 in `cell04` by 10 and store the resulting 200 in `cell01`. After, we can subtract 1 to get 199
 
-```brainfuck
-[
-  <++++++++++
-  >-
-]
+```text
+[<++++++++++>-]
 <-
 ```
 
 Similarly to above, we will now add every fifth integer to `cell03` to get a subtotal of 266333.
 
-```brainfuck
-[
-  >+++++
-  [
-    >+
-    >+
-    <<-
-  ]
-  >>
-  [
-    <<+
-    >>-
-  ]
-  <<<-
-]
->
-[-]
+```text
+[>+++++[>+>+<<-]>>[<<+>>-]<<<-]>[-]
 ```
 
 We know the lcm of 5 and 3 is 15, so now we are going to use the
@@ -146,45 +112,20 @@ same process as above to subtract the mutliples of 15.
 
 Set `cell01` to 66
 
-```brainfuck
-+++++++++++
-[
-  <++++++
-  >-
-]
+```text
++++++++++++[<++++++>-]
 ```
 
 Subtract every 15th number
 
-```brainfuck
-<
-[
-  >+++++++++++++++
-  [
-    >-
-    >+
-    <<-
-  ]
-  >>
-  [
-    <<+
-    >>-
-  ]
-  <<<-
-]
->
-[-]
+```text
+<[>+++++++++++++++[>->+<<-]>>[<<+>>-]<<<-]>[-]
 ```
 
 And finally we can move the correct answer (233168) into `cell01`
 
-```brainfuck
->
-[
-  <<+
-  >>-
-]
-<<
+```text
+>[<<+>>-]<<
 ```
 
 The final formatted code is 
@@ -276,7 +217,7 @@ The final formatted code is
 
 And condensed code is
 
-```brainfuck
+```text
 >>++++++[<+++++>-]<[<+++++++++++>-]<+++[>+++[>+>+<<-]>>[<<+>>-]<<<-]>[-]<+++++[>++++<-]>[<++++++++++>-]<-[>+++++[>+>+<<-]>>[<<+>>-]<<<-]>[-]+++++++++++[<++++++>-]<[>+++++++++++++++[>->+<<-]>>[<<+>>-]<<<-]>[-]>[<<+>>-]<<
 ```
 
@@ -306,7 +247,11 @@ So the translation of my brainf program to P\" is:
 
 \\(R\\)\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)r\\(R\\)\\(r'\\))\\(L\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)r\\(R\\)\\(r'\\))\\(L\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)r\\(R\\)r\\(L\\)\\(L\\)\\(r'\\))\\(R\\)\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)(\\(r'\\))
 
-\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(L\\)\\(r'\\))\\(R\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(R\\)\\(r'\\))\\(L\\)\\(r'\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)r\\(R\\)\\(r\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)(\\(r'\\))\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(R\\)\\(r'\\))\\(L\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)\\(r'\\)\\(R\\)r\\(L\\)\\(L\\)\\(r'\\))\\(R\\)\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)(\\(r'\\))\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)
+\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(L\\)\\(r'\\))\\(R\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(R\\)\\(r'\\))\\(L\\)\\(r'\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)r\\(R\\)\\(r\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)(\\(r'\\))\\
+
+(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(R\\)\\(r'\\))\\(L\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)\\(r'\\)\\(R\\)r\\(L\\)\\(L\\)\\(r'\\))\\(R\\)\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)(\\(r'\\))
+
+\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)
 
 ## Unary
 
@@ -335,7 +280,7 @@ Unary is programmed by
 
 Let's take the simple program that clears a cell
 
-```brainfuck
+```text
 [-]
 ```
 

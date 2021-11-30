@@ -1,9 +1,9 @@
---
+---
 layout: post
 title: Project Euler - Problem 1 (Musical Notes)
 cover-img: https://i.ibb.co/J2pG2Fq/pe-one-ne.png
 usemathjax: true
---
+---
 
 For more information on Project Euler - Problem 1 see my other posts:
 - [Problem 1](https://kgerot.github.io/2020/12/23/Project-Euler-1/)

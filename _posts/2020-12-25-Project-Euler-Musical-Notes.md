@@ -47,28 +47,28 @@ be repeated.
 
 
 #### Base-5 Conversion of Notes
-| note | base 5 | decimal | 
-| :--- | :----: | ------: |
-| D5 crotchet | 00001 | 1 | 
-| D5 minim    | 00002 | 2 | 
-| D5 dotted minim  | 00003 | 3 |
-| D5 semibreve | 00004 | 4 | 
-| E5 crotchet | 00010 | 5 | 
-| E5 minim    | 00020 | 10 | 
-| E5 dotted minim  | 00030 | 15 | 
-| E5 semibreve | 00040 | 20 | 
-| F5 crotchet | 00100 | 25 |
-| F5 minim    | 00200 | 50 |
-| F5 dotted minim  | 00300 | 75 |
-| F5 semibreve | 00400 | 100 | 
-| G5 crotchet | 01000 | 125 |
-| G5 minim | 02000 | 250 |
-| G5 dotted minim | 03000 | 375 |
-| G5 semibreve | 04000 | 500 |
-| A5 crotchet | 10000 | 500 |
-| A5 minim | 20000 | 1250 |
-| A5 dotted minim | 30000 | 1875 |
-| A5 semibreve | 40000 | 2500 |
+| note | base 5 |
+| :--- | ----: |
+| D5 crotchet | 00001 | 
+| D5 minim    | 00002 |  
+| D5 dotted minim  | 00003 |
+| D5 semibreve | 00004 |
+| E5 crotchet | 00010 |
+| E5 minim    | 00020 |
+| E5 dotted minim  | 00030 |
+| E5 semibreve | 00040 |
+| F5 crotchet | 00100 |
+| F5 minim    | 00200 |
+| F5 dotted minim  | 00300 |
+| F5 semibreve | 00400 | 
+| G5 crotchet | 01000 |
+| G5 minim | 02000 |
+| G5 dotted minim | 03000 |
+| G5 semibreve | 04000 |
+| A5 crotchet | 10000 | 
+| A5 minim | 20000 |
+| A5 dotted minim | 30000 |
+| A5 semibreve | 40000 |
 
 
 **Example**: I want to add 333 to the current cell

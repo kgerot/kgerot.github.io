@@ -2,6 +2,7 @@
 layout: post
 title: Project Euler - Problem 1 
 subtitle: How I solved Problem 1 in a variety of languages
+header-img: img/unsplash-euler-one.jpg
 tags: ["project-euler"]
 usemathjax: true
 ---

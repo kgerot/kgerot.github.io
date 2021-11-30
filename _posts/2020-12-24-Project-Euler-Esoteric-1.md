@@ -245,9 +245,9 @@ Here are the translations from brainf instructions to P\" words:
 So the translation of my brainf program to P\" is:
 
 
-\\(RRrrrrrr(LrrrrrRr')L(LrrrrrrrrrrrRr')Lrrr(Rrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')\\)
-\\(Lrrrrr(RrrrrLr')R(LrrrrrrrrrrRr')Lr'(Rrrrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')\\)
-\\(rrrrrrrrrrr(LrrrrrrRr')L(Rrrrrrrrrrrrrrrr(Rr'RrLLr')RR(LLrRRr')LLLr')R(r')R(LLrRRr')LL\\)
+\\( RRrrrrrr(LrrrrrRr')L(LrrrrrrrrrrrRr')Lrrr(Rrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r') \\)
+\\( Lrrrrr(RrrrrLr')R(LrrrrrrrrrrRr')Lr'(Rrrrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r') \\)
+\\( rrrrrrrrrrr(LrrrrrrRr')L(Rrrrrrrrrrrrrrrr(Rr'RrLLr')RR(LLrRRr')LLLr')R(r')R(LLrRRr')LL \\)
 
 Although it isn't standard, I like to represent repeated P\" variables with exponents to make the syntax more concise. This isn't going into a compiler anyway
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Euler - Problem 1
+title: Project Euler - Problem 1 
 subtitle: How I solved Problem 1 in a variety of languages
 tags: ["project-euler"]
 cover-img: "https://i.ibb.co/J2pG2Fq/pe-one-ne.png"

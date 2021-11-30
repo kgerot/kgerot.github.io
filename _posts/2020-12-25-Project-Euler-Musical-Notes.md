@@ -2,6 +2,7 @@
 layout: post
 title: Project Euler - Problem 1 (Musical Notes)
 header-img: img/unsplash-music.jpg
+header-mask: true
 usemathjax: false
 ---
 

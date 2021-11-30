@@ -1,3 +1,13 @@
+:root {
+  --jet: #303136;
+  --black-coral: #5C5D67;
+  --cultured: #F4F4F5;
+  --opal: #95B2B0;
+  --tea-green: #C6EBBE;
+  --cinnabar: #D64933;
+  --yellow-orange: #FFB140;
+}
+
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
@@ -10,7 +20,7 @@
   }
 }
 .sidebar-container {
-  color: #bfbfbf;
+  color: var(--cinnabar);
   font-size: 14px;
 }
 .sidebar-container h5 {
@@ -119,7 +129,7 @@
 }
 .side-catalog .catalog-body .active {
   border-radius: 4px;
-  background-color: #F5F5F5;
+  background-color: #303136;
 }
 .side-catalog .catalog-body .active a {
   color: #0085a1!important;

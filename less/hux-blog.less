@@ -4,6 +4,15 @@
 @import "side-catalog.less";
 
 // Global Components
+:root {
+	--jet: #303136;
+	--black-coral: #5C5D67;
+	--cultured: #F4F4F5;
+	--opal: #95B2B0;
+	--tea-green: #C6EBBE;
+	--cinnabar: #D64933;
+	--yellow-orange: #FFB140;
+  }
 
 body {
 	.sans-serif;
@@ -290,7 +299,9 @@ pre code{
 	.navbar-brand {
 		font-weight: 800;
 		// materialize
-		color: white;
+		color: var(--cultured);
+		-webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--jet);
 		height: 56px;
 		line-height: 25px;
 		&:hover{
@@ -319,7 +330,7 @@ pre code{
 		background: transparent;
 		border-bottom: 1px solid transparent;
 		.navbar-brand {
-			color: white;
+			color: var(--jet);
 			padding: 20px;
 			line-height: 20px;
 			&:hover,
@@ -410,7 +421,7 @@ pre code{
 	.post-heading,
 	.page-heading {
 		padding: 85px 0 55px;
-		color: white;
+		color: var(--jet);
 		@media only screen and (min-width: 768px) {
 			padding: 150px 0;
 		}

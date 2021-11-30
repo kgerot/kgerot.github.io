@@ -2,7 +2,8 @@
 layout: post
 title: Project Euler - Problem 1 (Musical Notes)
 cover-img: https://i.ibb.co/J2pG2Fq/pe-one-ne.png
-usemathjax: true
+header-img: /img/unsplash-music.png
+usemathjax: false
 ---
 
 For more information on Project Euler - Problem 1 see my other posts:

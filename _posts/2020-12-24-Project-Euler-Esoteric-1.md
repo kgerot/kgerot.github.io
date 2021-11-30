@@ -245,13 +245,15 @@ Here are the translations from brainf instructions to P\" words:
 So the translation of my brainf program to P\" is:
 
 
-\\(R\\)\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)r\\(R\\)\\(r'\\))\\(L\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)r\\(R\\)\\(r'\\))\\(L\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)r\\(R\\)r\\(L\\)\\(L\\)\\(r'\\))\\(R\\)\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)(\\(r'\\))
+\\(RRrrrrrr(LrrrrrRr')L(LrrrrrrrrrrrRr')Lrrr(Rrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')\\)
+\\(Lrrrrr(RrrrrLr')R(LrrrrrrrrrrRr')Lr'(Rrrrrr(RrRrLLr')RR(LLrRRr')LLLr')R(r')\\)
+\\(rrrrrrrrrrr(LrrrrrrRr')L(Rrrrrrrrrrrrrrrr(Rr'RrLLr')RR(LLrRRr')LLLr')R(r')R(LLrRRr')LL\\)
 
-\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(L\\)\\(r'\\))\\(R\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(R\\)\\(r'\\))\\(L\\)\\(r'\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)r\\(R\\)\\(r\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)(\\(r'\\))\\
+Although it isn't standard, I like to represent repeated P\" variables with exponents to make the syntax more concise. This isn't going into a compiler anyway
 
-(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(R\\)\\(r'\\))\\(L\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)\\(r'\\)\\(R\\)r\\(L\\)\\(L\\)\\(r'\\))\\(R\\)\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)(\\(r'\\))
-
-\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)
+\\(R^2r^6(Lr^5Rr')L(Lr^{11}Rr')Lr^3(Rr^3(RrRrL^2r')R^2(L^2rR^2r')L^2r')R(r')\\)
+\\(Lr^5(Rr^4Lr')R(Lr^{10}Rr')Lr'(Rr^5(RrRrL^2r')R^2(L^2rR^2r')L^3r')R(r')\\)
+\\(r^{11}(Lr^6Rr')L(Rr^{15}(Rr'RrL^2r')R^2(L^2rR^2r')L^3r')R(r')R(L^2rR^2r')L^2\\)
 
 ## Unary
 

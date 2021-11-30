@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project Euler - Problem 1 (Esoteric)
-subtitle: Solution to Problem 1 in brainf***, P", and Unary
+subtitle: Solution to Problem 1 in brainf, P", and Unary
 tags: ["project-euler", "esoteric", "brainf"]
 cover-img: "https://i.ibb.co/nQRv4cg/pe-one-e.png"
 usemathjax: true
@@ -9,7 +9,7 @@ usemathjax: true
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.
 
-For more detailed information on the solution and on Project Euler, go to the non-esoteric solution article [here](https://kgerot.github.io/2020-12-24-Project-Euler-1/).
+For more detailed information on the solution and on Project Euler, go to the non-esoteric solution article [here](https://kgerot.github.io/2020/12/24/Project-Euler-1/).
 
 ## Problem
 
@@ -17,15 +17,17 @@ For more detailed information on the solution and on Project Euler, go to the no
 >
 > Find the sum of all the multiples of 3 or 5 below 1000.
 
-[Brainf\*ck](#brainf)
+[Brainf](#brainf)
 
 [P\"](#p)
 
 [Unary](#unary)
 
-## Brainf\*\*\*
+[Musical Notes](https://kgerot.github.io/2020/12/25/PE-1-Musical-Notes.md) *separate post*
 
-[Esolangs Wiki's article on Brainf\*\*\*](https://esolangs.org/wiki/Brainfuck)
+## brainf
+
+[Esolangs Wiki's article on brainf](https://esolangs.org/wiki/Brainfuck)
 
 [Code Snippet (Repl.it)](https://repl.it/@KatieGerot/pe-1-bf)
 
@@ -284,13 +286,13 @@ And condensed code is
 
 [Wikipedia Article on P\"](https://en.wikipedia.org/wiki/P%E2%80%B2%E2%80%B2)
 
-Easily enough, P" uses instructions equivalent to all brainf\*\*\* instructions excluding I/O. I don't use any I/O in my code above. *Note: P\" came first and no one is sure if brainf\*\*\* is derivative or developed on its own.*
+Easily enough, P" uses instructions equivalent to all brainf instructions excluding I/O. I don't use any I/O in my code above. *Note: P\" came first and no one is sure if brainf is derivative or developed on its own.*
 
 P\" has four symbols in its alphabet--- \\(\{ R, \lambda, \(, \) \} \\). This alphabet can form the words \\(r, r', L, R\\) where \\(r \equiv \lambda R\\), \\(r' \equiv r^n\\) (where \\(r^n\\) is the \\(n\\)th iterate of \\(r\\)), \\(: \equiv r'\lambda\\) 
 
-Here are the translations from brainf\*\*\* instructions to P\" words:
+Here are the translations from brainf instructions to P\" words:
 
-| brainf\*\*\* | P\"       |
+| brainf | P\"       |
 | :----------: | :-------: |
 | >            | \\(R\\)   |
 | <            | \\(L\\)   |
@@ -299,7 +301,7 @@ Here are the translations from brainf\*\*\* instructions to P\" words:
 | \[           | \\(\(\\)  |
 | \]           | \\(\)\\)  |
 
-So the tranlation of my brainf\*\*\* program to P\" is:
+So the translation of my brainf program to P\" is:
 
 
 \\(R\\)\\(R\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)r\\(R\\)\\(r'\\))\\(L\\)(\\(L\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)\\(r\\)r\\(R\\)\\(r'\\))\\(L\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)\\(r\\)\\(r\\)\\(r\\)(\\(R\\)r\\(R\\)r\\(L\\)\\(L\\)\\(r'\\))\\(R\\)\\(R\\)(\\(L\\)\\(L\\)r\\(R\\)\\(R\\)\\(r'\\))\\(L\\)\\(L\\)\\(L\\)\\(r'\\))\\(R\\)(\\(r'\\))
@@ -313,8 +315,8 @@ So the tranlation of my brainf\*\*\* program to P\" is:
 
 Unary is programmed by
 
-1. Writing the code in brainf\*\*\*
-2. Converting the brainf\*\*\* code to binary using the table below
+1. Writing the code in brainf
+2. Converting the brainf code to binary using the table below
 3. Concatenate all the binary numbers an prepend a 1 to the whole binary number
 4. Convert to unary using the digit 0
 

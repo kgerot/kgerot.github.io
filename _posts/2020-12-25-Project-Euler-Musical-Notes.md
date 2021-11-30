@@ -88,8 +88,7 @@ In order to minimize the number of beats per bar, I will make notes of the same 
 This leads to a maximum of 10 beats per measure excluding the instruction. I will use 4/4 time and
 split up instructions that have durations beyond that or dondense into a chord. Order doesn't matter
 with the notes inside a bar because each has only one meaning that is context-free. But, in order to
-keep this problem as simple as possible, I did not alter the order or add more notes to a bar. To make
-the piece more interesting and coherent, I did add a baseline in the actual composition (not the code).
+keep this problem as simple as possible, I did not alter the order or add more notes to a bar.
 
 So, applying this to my brainf program above, I get the following score where `o` represents a
 whole note (semibreve), `c` represents a quarter note (crotchet), `h` represents a half-note (minim),

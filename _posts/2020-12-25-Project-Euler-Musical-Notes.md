@@ -6,13 +6,12 @@ usemathjax: true
 --
 
 For more information on Project Euler - Problem 1 see my other posts:
-- Problem 1
-- Problem 1 - Brainf and Unary
+- [Problem 1](https://kgerot.github.io/2020/12/23/Project-Euler-1/)
+- [Problem 1 - Brainf, P\", and Unary](https://kgerot.github.io/2020/12/24/Project-Euler-Esoteric-1/)
 
 ## Problem 1
 
 ## Musical Notes
-
 [Esolangs Wiki's article on Musical Notes](https://esolangs.org/wiki/Musical_notes)
 
 The language was created by Tom Price-Nicholson in 2014

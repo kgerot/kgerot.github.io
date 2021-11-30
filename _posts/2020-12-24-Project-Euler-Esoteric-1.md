@@ -9,7 +9,7 @@ usemathjax: true
 
 If you want to solve the Project Euler problems on your own, stop here. The answer is spoiled in this article.
 
-For more detailed information on the solution and on Project Euler, go to the non-esoteric solution article [here](https://kgerot.github.io/2020/12/24/Project-Euler-1/).
+For more detailed information on the solution and on Project Euler, go to the non-esoteric solution article [here](https://kgerot.github.io/2020/12/23/Project-Euler-1/).
 
 ## Problem
 

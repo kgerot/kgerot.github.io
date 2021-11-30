@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project Euler - Problem 1 (Musical Notes)
-header-img: https://github.com/kgerot/kgerot.github.io/blob/main/img/unsplash-music.jpg?raw=true
+header-img: img/unsplash-music.jpg
 usemathjax: false
 ---
 

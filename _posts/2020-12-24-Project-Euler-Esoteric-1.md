@@ -3,7 +3,6 @@ layout: post
 title: Project Euler - Problem 1 (Esoteric)
 subtitle: Solution to Problem 1 in brainf, P", and Unary
 tags: ["project-euler", "esoteric", "brainf"]
-cover-img: "https://i.ibb.co/nQRv4cg/pe-one-e.png"
 usemathjax: true
 ---
 

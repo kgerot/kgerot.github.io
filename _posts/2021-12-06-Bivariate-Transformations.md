@@ -47,11 +47,11 @@ and we want to find the distribution of the transformation such that $U_1 = Y_1$
 
 Given $u_1 = h_1(y_1, y_2)$ and $u_2 = h_2(y_1,y_2)$, we need to find the inverse of these functions such that
 
-\\(
+$$
 \begin{align*}
     y_1 &= h_1^{-1}(u_1, u_2) & y_2 &= h_2^{-1}(u_1,u_2)
 \end{align*}
-\\)
+$$
 
 For our example, we would first find the inverse of $u_1$ which is pretty easy. 
 
@@ -136,8 +136,10 @@ To find this helper variable $u_2$, we should first try to find the inverse of $
 From here we can perform all the steps above in the same way until the end. At that point, we have a joint distribution function of $f_{U_1,U_2}(u_1,u_2)$, but we are just looking for the distribution for $U_2 = U$. So, all we need to do is find the marginal distribution by integrating with respect to $U_1$ to get
 
 $$
+\begin{equation*}
     f_{U}(u) = \begin{cases}
         2(u_2-\ln u_2 - 1), & 0 \le u_2 \le 1\\
         0, & \textit{otherwise}
     \end{cases}
+\end{equation*}
 $$

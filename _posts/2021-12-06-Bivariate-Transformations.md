@@ -67,22 +67,27 @@ $$
 
 Next we need to find the Jacobian determinant of these inverse functions. The Jacobian matrix is simply the partials of $h_1^{-1}(u_1,u_2)$ and $h_2^{-1}(u_1,u_2)$ with respect to both $u_1$ and $u_2$. It looks as follows:
 
-\\(
+$$
+\begin{equation*}
 \begin{bmatrix}
     \frac{\partial h_1^{-1}}{\partial u_1} & \frac{\partial h_1^{-1}}{\partial u_2}\\
     \frac{\partial h_2^{-1}}{\partial u_1} & \frac{\partial h_2^{-1}}{\partial u_2}\\
 \end{bmatrix}
-\\)
+\end{equation*}
+$$
 
 The determinant of this matrix is then the difference of the diagonals:
 
-\\(
+$$
+\begin{equation*}
     \frac{\partial h_1^{-1}}{\partial u_1}\frac{\partial h_2^{-1}}{\partial u_2} - \frac{\partial h_1^{-1}}{\partial u_2}\frac{\partial h_2^{-1}}{\partial u_1}
-\\)
+\end{equation*}
+$$
 
 For our example, the Jacobian matrix would be as follows:
 
-\\(
+$$
+\begin{equation*}
 \begin{bmatrix}
     \frac{\partial (u_1)}{\partial u_1} & \frac{\partial (u_1)}{\partial u_2}\\
     \frac{\partial (u_2/u_1)}{\partial u_1} & \frac{\partial (\frac{u_2}{u_1})}{\partial u_2}\\
@@ -91,7 +96,8 @@ For our example, the Jacobian matrix would be as follows:
     1 & 0\\
     -u_2/u_1^2 & 1/u_1\\
 \end{bmatrix}
-\\)
+\end{equation*}
+$$
 
 and the determinant would simply be $1(1/u_1)-0(-u_2/u_1^2)=1/u_1$.
 

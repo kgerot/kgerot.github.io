@@ -25,7 +25,7 @@ Complex numbers have a multitude of other defined features. For a complex number
 
 # Plotting Complex Numbers
 
-![blank complex number graph](../img/graphs/blank-complex)
+![blank complex number graph](../img/graphs/blank-complex.png)
 
 When plotting complex numbers, we need to use a graph with an imaginary *and* a real number line as shown above. 
 
@@ -36,11 +36,11 @@ Let's plot the following complex numbers:
 - $\pi - i$
 - $-2-2i$
 
-![complex number graph with plotted points](../img/graphs/plotted-complex)
+![complex number graph with plotted points](../img/graphs/plotted-complex.png)
 
 Each of these creates a vector from the origin as shown:
 
-![complex number graph with vectors](../img/graphs/vector-complex)
+![complex number graph with vectors](../img/graphs/vector-complex.png)
 
 # Algebra of Complex Numbers
 

@@ -30,11 +30,11 @@ Throughout this, I'll show the general case and the work for an example given be
 
 ### Example Variables
 
-There are two random variables $X_1$ and $X_2$ with joint distribution
+There are two random variables $Y_1$ and $Y_2$ with joint distribution
 
 $$
-    f_{X_1,X_2}(x_1,x_2) = \begin{cases}
-        2(1-x_1), & 0 \le y_1 \le 1,\; 0 \le y_2 \le 1\\
+    f_{Y_1,Y_2}(y_1,y_2) = \begin{cases}
+        2(1-y_1), & 0 \le y_1 \le 1,\; 0 \le y_2 \le 1\\
         0, & \textit{otherwise}
     \end{cases}
 $$
@@ -54,13 +54,13 @@ $$
 For our example, we would first find the inverse of $u_1$ which is pretty easy. 
 
 $$
-    x_1 = x_1 = h_1(x_1,x_2) \implies x_1 = u_1 = h_1^{-1}(u_1,u_2)
+    y_1 = y_1 = h_1(y_1,y_2) \implies y_1 = u_1 = h_1^{-1}(u_1,u_2)
 $$
 
-Then we can use the fact that $x_1 = u_1$ to write our second inverse function:
+Then we can use the fact that $y_1 = u_1$ to write our second inverse function:
 
 $$
-    u_2 = x_1x_2 =  h_2(x_1,x_2) \implies x_2 = \frac{u_2}{u_1} = h_2^{-1}(u_1,u_2)
+    u_2 = y_1y_2 =  h_2(y_1,y_2) \implies y_2 = \frac{u_2}{u_1} = h_2^{-1}(u_1,u_2)
 $$
 
 ## Jacobian Determinant
@@ -100,7 +100,7 @@ and the determinant would simply be $1(1/u_1)-0(-u_2/u_1^2)=1/u_1$.
 Finally we can find the joint distribution of $u_1$ and $u_2$ . The general equation for this distribution is
 
 \\(
-    f_{U_1,U_2}(u_1,u_2) = f_{X_1,X_2}(h_1^{-1}(u_1,u_2),h_2^{-1}(u_1,u_2))\cdot\left\|J\right\| 
+    f_{U_1,U_2}(u_1,u_2) = f_{Y_1,Y_2}(h_1^{-1}(u_1,u_2),h_2^{-1}(u_1,u_2))\cdot\left\|J\right\| 
 \\)
 
 where $\|J\|$ is the absolute value of the Jacobian matrix.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bivariate Transformations
-header-img: img/pixabay-rocks.png
+header-img: img/pixabay-rocks.jpg
 tags: ["statistics", "explanations"]
 header-mask: true
 usemathjax: true
@@ -72,17 +72,17 @@ $$
     \frac{\partial h_1^{-1}}{\partial u_1} & \frac{\partial h_1^{-1}}{\partial u_2}\\
     \frac{\partial h_2^{-1}}{\partial u_1} & \frac{\partial h_2^{-1}}{\partial u_2}\\
 \end{bmatrix}
-$$
+\\)
 
 The determinant of this matrix is then the difference of the diagonals:
 
-$$
+\\(
     \frac{\partial h_1^{-1}}{\partial u_1}\frac{\partial h_2^{-1}}{\partial u_2} - \frac{\partial h_1^{-1}}{\partial u_2}\frac{\partial h_2^{-1}}{\partial u_1}
-$$
+\\)
 
 For our example, the Jacobian matrix would be as follows:
 
-$$
+\\(
 \begin{bmatrix}
     \frac{\partial (u_1)}{\partial u_1} & \frac{\partial (u_1)}{\partial u_2}\\
     \frac{\partial (u_2/u_1)}{\partial u_1} & \frac{\partial (\frac{u_2}{u_1})}{\partial u_2}\\
@@ -91,7 +91,7 @@ $$
     1 & 0\\
     -u_2/u_1^2 & 1/u_1\\
 \end{bmatrix}
-$$
+\\)
 
 and the determinant would simply be $1(1/u_1)-0(-u_2/u_1^2)=1/u_1$.
 
@@ -99,9 +99,9 @@ and the determinant would simply be $1(1/u_1)-0(-u_2/u_1^2)=1/u_1$.
 
 Finally we can find the joint distribution of $u_1$ and $u_2$ . The general equation for this distribution is
 
-$$
+\\(
     f_{U_1,U_2}(u_1,u_2) = f_{X_1,X_2}(h_1^{-1}(u_1,u_2),h_2^{-1}(u_1,u_2))\cdot\left\|J\right\| 
-$$
+\\)
 
 where $\|J\|$ is the absolute value of the Jacobian matrix.
 

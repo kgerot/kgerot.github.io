@@ -100,15 +100,15 @@ and the determinant would simply be $1(1/u_1)-0(-u_2/u_1^2)=1/u_1$.
 Finally we can find the joint distribution of $u_1$ and $u_2$ . The general equation for this distribution is
 
 $$
-    f_{U_1,U_2}(u_1,u_2) = f_{X_1,X_2}(h_1^{-1}(u_1,u_2),h_2^{-1}(u_1,u_2))\cdot\left|J\right| 
+    f_{U_1,U_2}(u_1,u_2) = f_{X_1,X_2}(h_1^{-1}(u_1,u_2),h_2^{-1}(u_1,u_2))\cdot\left\|J\right\| 
 $$
 
-where $|J|$ is the absolute value of the Jacobian matrix.
+where $\|J\|$ is the absolute value of the Jacobian matrix.
 
 In our example, this would work out to be
 
 $$
-    f_{U_1,U_2}(u_1,u_2) = 2(1-u_1)\cdot \left|\frac{1}{u_1}\right|
+    f_{U_1,U_2}(u_1,u_2) = 2(1-u_1)\cdot \left\|\frac{1}{u_1}\right\|
 $$
 
 for $0 \le u_2 \le u_1 \le 1$ and $0$ otherwise.

@@ -2,7 +2,7 @@
 layout: post
 title: Complex Numbers Part I
 description: Definitions, Features, Plotting, and Algebra
-header-img: img/pixabay-trees.jpg
+header-img: img/pixabay-woods.jpg
 tags: ["mathematics", "explanations"]
 header-mask: true
 usemathjax: true

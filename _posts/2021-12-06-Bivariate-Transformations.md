@@ -67,7 +67,7 @@ $$
 
 Next we need to find the Jacobian determinant of these inverse functions. The Jacobian matrix is simply the partials of $h_1^{-1}(u_1,u_2)$ and $h_2^{-1}(u_1,u_2)$ with respect to both $u_1$ and $u_2$. It looks as follows:
 
-$$
+\\(
 \begin{bmatrix}
     \frac{\partial h_1^{-1}}{\partial u_1} & \frac{\partial h_1^{-1}}{\partial u_2}\\
     \frac{\partial h_2^{-1}}{\partial u_1} & \frac{\partial h_2^{-1}}{\partial u_2}\\

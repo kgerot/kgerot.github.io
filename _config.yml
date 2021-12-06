@@ -1,10 +1,10 @@
 title: Katie Gerot
-header-img: img/me.png
+header-img: img/pixabay-burdock.jpg
 url: "http://kgerot.github.io"
 baseurl: ""
 sidebar: true
 sidebar-about-description: "Senior Computer Science and Math Major with a minor in Statistics at the University of Nebraska--Lincoln."
-sidebar-avatar:  img/profile.jpg
+sidebar-avatar:  img/me.png
 RSS: true
 github_username:  kgerot
 permalink: pretty

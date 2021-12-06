@@ -1,5 +1,5 @@
 # Site settings
-title: Katie Gerot
+title: Statistics and Code
 header-img: img/unsplash-book.jpg
 # email: 
 # description: "Statistics and Code"
@@ -10,7 +10,7 @@ baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "statistics and code"
+sidebar-about-description: "Senior Computer Science and Math Major with a minor in Statistics at the University of Nebraska--Lincoln."
 sidebar-avatar:  "https://avatars.githubusercontent.com/u/44932613?v=4"
 
 

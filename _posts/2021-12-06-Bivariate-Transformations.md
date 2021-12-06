@@ -109,7 +109,7 @@ Finally we can find the joint distribution of $u_1$ and $u_2$ . The general equa
     f_{U_1,U_2}(u_1,u_2) = f_{Y_1,Y_2}(h_1^{-1}(u_1,u_2),h_2^{-1}(u_1,u_2))\cdot\lvert J\rvert 
 \\)
 
-where $\|J\|$ is the absolute value of the Jacobian matrix.
+where $\lvert J\rvert$ is the absolute value of the Jacobian matrix.
 
 In our example, this would work out to be
 

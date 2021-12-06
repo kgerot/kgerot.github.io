@@ -33,10 +33,12 @@ Throughout this, I'll show the general case and the work for an example given be
 There are two random variables $Y_1$ and $Y_2$ with joint distribution
 
 $$
+\begin{equation*}
     f_{Y_1,Y_2}(y_1,y_2) = \begin{cases}
         2(1-y_1), & 0 \le y_1 \le 1,\; 0 \le y_2 \le 1\\
         0, & \textit{otherwise}
     \end{cases}
+\end{equation*}
 $$
 
 and we want to find the distribution of the transformation such that $U_1 = Y_1$ and $U_2 = Y_1Y_2$
@@ -45,23 +47,23 @@ and we want to find the distribution of the transformation such that $U_1 = Y_1$
 
 Given $u_1 = h_1(y_1, y_2)$ and $u_2 = h_2(y_1,y_2)$, we need to find the inverse of these functions such that
 
-$$
+\\(
 \begin{align*}
     y_1 &= h_1^{-1}(u_1, u_2) & y_2 &= h_2^{-1}(u_1,u_2)
 \end{align*}
-$$
+\\)
 
 For our example, we would first find the inverse of $u_1$ which is pretty easy. 
 
-$$
+\\(
     y_1 = y_1 = h_1(y_1,y_2) \implies y_1 = u_1 = h_1^{-1}(u_1,u_2)
-$$
+\\)
 
 Then we can use the fact that $y_1 = u_1$ to write our second inverse function:
 
-$$
+\\(
     u_2 = y_1y_2 =  h_2(y_1,y_2) \implies y_2 = \frac{u_2}{u_1} = h_2^{-1}(u_1,u_2)
-$$
+\\)
 
 ## Jacobian Determinant
 

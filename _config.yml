@@ -4,7 +4,7 @@ url: "http://kgerot.github.io"
 baseurl: ""
 sidebar: true
 sidebar-about-description: "Senior Computer Science and Math Major with a minor in Statistics at the University of Nebraska--Lincoln."
-sidebar-avatar:  "https://avatars.githubusercontent.com/u/44932613?v=4"
+sidebar-avatar:  img/profile.jpg
 RSS: true
 github_username:  kgerot
 permalink: pretty

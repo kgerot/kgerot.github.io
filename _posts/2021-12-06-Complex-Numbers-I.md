@@ -27,6 +27,8 @@ Complex numbers have a multitude of other defined features. For a complex number
 
 ![blank complex number graph](https://github.com/kgerot/kgerot.github.io/blob/main/img/graphs/blank-complex.PNG)
 
+<img src="https://github.com/kgerot/kgerot.github.io/blob/main/img/graphs/blank-complex.PNG" width="800" />
+
 When plotting complex numbers, we need to use a graph with an imaginary *and* a real number line as shown above. 
 
 Let's plot the following complex numbers:

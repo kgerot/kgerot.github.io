@@ -10,7 +10,7 @@
 }
 
 .privacy-statement{
-  color: var(--black-coral);
+  color: var(--cultured);
   font-size: small;
   text-align: center;
 }
@@ -27,7 +27,7 @@
   }
 }
 .sidebar-container {
-  color: var(--black-coral);
+  color: var(--cultured);
   font-size: 14px;
 }
 .sidebar-container h5 {

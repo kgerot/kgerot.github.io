@@ -10,7 +10,7 @@
 }
 
 .privacy-statement{
-  color: var(--cultured);
+  color: var(--black-coral);
   font-size: small;
   text-align: center;
 }
@@ -27,15 +27,15 @@
   }
 }
 .sidebar-container {
-  color: var(--cultured);
+  color: var(--charcoal);
   font-size: 14px;
 }
 .sidebar-container h5 {
-  color: var(--gainsboro);
+  color: var(--charcoal);
   padding-bottom: 1em;
 }
 .sidebar-container h5 a {
-  color: var(--gainsboro) !important;
+  color: var(--charcoal) !important;
   text-decoration: none;
 }
 .sidebar-container a {

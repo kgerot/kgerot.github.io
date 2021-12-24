@@ -895,6 +895,11 @@ img::-moz-selection {
 #tag_cloud .tag:active {
   background-color: var(--opal) !important;
 }
+.post-tags{
+  color: var(--charcoal);
+  border-color: var(--charcoal);
+  background-color: var(--gainsboro);
+}
 @media only screen and (min-width: 768px) {
   #tag_cloud {
     margin-bottom: 25px;

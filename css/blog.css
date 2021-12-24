@@ -891,8 +891,8 @@ img::-moz-selection {
   background-color: var(--opal) !important;
 }
 .post-tag{
-  color: var(--charcoal);
-  border-color: var(--charcoal);
+  color: var(--charcoal) !important;
+  border-color: var(--charcoal) !important;
   background-color: var(--gainsboro);
 }
 @media only screen and (min-width: 768px) {

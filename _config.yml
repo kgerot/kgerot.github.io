@@ -4,6 +4,7 @@ SEOTitle: "Katie Gerot"
 description: "Writeups on statistics and programming as well as whatever is interesting to me at the moment"
 url: "http://kgerot.github.io"
 baseurl: ""
+google_analytics: G-0JF09M14QR
 sidebar: true
 sidebar-about-description: "Senior Computer Science and Math Major with a minor in Statistics at the University of Nebraska--Lincoln."
 sidebar-avatar:  img/me.png

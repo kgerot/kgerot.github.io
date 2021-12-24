@@ -172,7 +172,7 @@ h4 {
   font-size: 21px;
 }
 a {
-  color: var(--cultured);
+  color: var(--tea-green);
 }
 a:hover,
 a:focus {
@@ -186,7 +186,7 @@ article {
   overflow-x: hidden;
 }
 blockquote {
-  color: var(--gainsboro);
+  color: var(--black-coral);
   font-style: italic;
   font-size: 0.95em;
   margin: 20px 0 20px;

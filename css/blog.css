@@ -172,11 +172,11 @@ h4 {
   font-size: 21px;
 }
 a {
-  color: var(--tea-green);
+  color: var(--opal);
 }
 a:hover,
 a:focus {
-  color: var(--opal);
+  color: var(--tea-green);
 }
 a img:hover,
 a img:focus {

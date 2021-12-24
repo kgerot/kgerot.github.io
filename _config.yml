@@ -4,7 +4,7 @@ SEOTitle: "Katie Gerot"
 description: "Writeups on statistics, programming, mathematics, and pedagogy (as well as whatever is interesting to me at the moment)."
 url: "http://kgerot.github.io"
 featured-tags: True
-featured-condition-size: 3
+featured-condition-size: 2
 baseurl: ""
 google_analytics: G-0JF09M14QR
 sidebar: true

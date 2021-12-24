@@ -892,8 +892,8 @@ img::-moz-selection {
 }
 .post-tag{
   color: var(--charcoal) !important;
-  border-color: var(--charcoal) !important;
-  background-color: var(--gainsboro);
+  border-color: var(--gainsboro) !important;
+  background-color: var(--cultured);
 }
 @media only screen and (min-width: 768px) {
   #tag_cloud {

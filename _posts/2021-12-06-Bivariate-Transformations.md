@@ -3,6 +3,7 @@ layout: post
 title: Bivariate Transformations
 header-img: img/pixabay-rocks.jpg
 tags: ["statistics", "explanations"]
+icon: img/pixabay-rocks.jpg
 header-mask: true
 usemathjax: true
 ---

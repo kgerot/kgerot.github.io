@@ -36,8 +36,8 @@ Knowing that $$i^2=-1$$, you can also just use normal arithmetic to solve a mult
 
 Other properties of complex arithmetic include:
 
-- Commutativity: $$\alpha + \beta = \beta + \alpha \forall \alpha, \beta\in\mathcal{C}$$
-- Associativity: $$(\alpha + \beta) + \gamma = \alpha + (\beta + \gamma)\forall \alpha, \beta,\gamma\in\mathcal{C}$$
-- Identity: $$\alpha + 0 = \alpha$$ and $$\alpha\cdot 1 = \alpha\forall \alpha\in\mathcal{C}$$
-- Additive Inverse: $$\forall\alpha\in\mathcal{C}\exists$$ a unique $\beta\in\mathcal{C}$ such that $$\alpha + \beta = 0$$
-- Multiplicative Inverse: $$\forall\alpha\in\mathcal{C}$$ with $\alpha\neq 0\exists$$ a unique $\beta\in\mathcal{C}$ such that $$\alpha\beta = 1$$
+- Commutativity: $$\alpha + \beta = \beta + \alpha $$ $$\forall \alpha, \beta\in\mathcal{C}$$
+- Associativity: $$(\alpha + \beta) + \gamma = \alpha + (\beta + \gamma)$$ $$\forall \alpha, \beta,\gamma\in\mathcal{C}$$
+- Identity: $$\alpha + 0 = \alpha$$ and $$\alpha\cdot 1 = \alpha$$ $$\forall \alpha\in\mathcal{C}$$
+- Additive Inverse: $$\forall\alpha\in\mathcal{C}$$ there exists a unique $\beta\in\mathcal{C}$ such that $$\alpha + \beta = 0$$
+- Multiplicative Inverse: $$\forall\alpha\in\mathcal{C}$$ with $\alpha\neq 0$$ there exists a unique $\beta\in\mathcal{C}$ such that $$\alpha\beta = 1$$

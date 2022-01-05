@@ -40,11 +40,11 @@ $$\mathcal{R}$$ and $$\mathcal{C}$$ are also referred to as fields (and can thus
 
 Moving into higher dimensions, we can define $$\mathcal{R}^n$$ and $$\mathcal{C}^n$$ (generalized as $$\mathcal{F}^n$$) as follows
 
-$$\mathcal{F}^n$$ is the set of all lists of length $$n$$ of elements of $$\mathcal{F}$$:
+> $$\mathcal{F}^n$$ is the set of all lists of length $$n$$ of elements of $$\mathcal{F}$$:
 
-\\(\mathcal{F}=\{(x_1,\dots,x_n)\;:\; x_j\in\mathcal{F}\text{ for }j=1,\dots,n\}.\\)
+> \\(\mathcal{F}=\{(x_1,\dots,x_n)\;:\; x_j\in\mathcal{F}\text{ for }j=1,\dots,n\}.\\)
 
-For $$(x_1,\dots,x_n)\in\mathcal{F^n}$$ and $$j=1,\dots,n$$, $$x_j$$ is the $$j^{\text{th}}$$ coordinate of $$(x_1,\dots,x_n)$$.
+> For $$(x_1,\dots,x_n)\in\mathcal{F^n}$$ and $$j=1,\dots,n$$, $$x_j$$ is the $$j^{\text{th}}$$ coordinate of $$(x_1,\dots,x_n)$$.
 
 $$\mathcal{R}^2$$ and $$\mathcal{R}^3$$ are both probably familiar to you.
 

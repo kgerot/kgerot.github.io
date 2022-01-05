@@ -42,8 +42,12 @@ $$\mathcal{R}^2$$ and $$\mathcal{R}^3$$ are both probably familiar to you.
 
 $$\mathcal{R}^2$$ is the set of all real ordered pairs (as if on a plane), also denoted by
 
-\\(\mathcal{R}^2 = \{(x,y)\;:\; x,y\in\mathcal{R}\}\\)
+\\(\mathcal{R}^2 = \{(x,y)\;:\; x,y\in\mathcal{R}.\}\\)
 
 $$\mathcal{R}^2$$ is the set of all real ordered triples (as if in ordinary space), also denoted by
 
-\\(\mathcal{R}^3 = \{(x,y,z)\;:\; x,y,z\in\mathcal{R}\}\\)
+\\(\mathcal{R}^3 = \{(x,y,z)\;:\; x,y,z\in\mathcal{R}.\}\\)
+
+Moving into higher dimensions, we can define $$\mathcal{R}^n$$ and $$\mathcal{C}^n$$ (generalized as $$\mathcal{F}^n$$) as follows
+
+> $$\mathcal{R}^n$$

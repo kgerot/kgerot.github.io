@@ -24,6 +24,8 @@ This post will go over
 ---
 #  $$\mathcal{R}^n$$ and $$\mathcal{C}^n$$
 
+### Real and Complex Numbers
+
 Two major sets are $$\mathcal{R}$$ (all real numbers) and $$\mathcal{C}$$ (all complex numbers). Real numbers, as you likely already know, are all rational and irrational numbers. Complex numbers are all numbers $$c$$ such that $$c=a+bi$$ where $$(a,b)\in\mathcal{R}$$ and $$i=\sqrt{-1}$$. All real numbers are also complex numbers as a real number $$r$$ just equals $$r+0i$$.
 
 Complex numbers follow the following rules for addition and multiplication:

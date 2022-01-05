@@ -44,7 +44,11 @@ Moving into higher dimensions, we can define $$\mathcal{R}^n$$ and $$\mathcal{C}
 
 > $$\mathcal{F}^n$$ is the set of all lists of length $$n$$ of elements of $$\mathcal{F}$$:
 
-> \\(\mathcal{F}=\{(x_1,\dots,x_n)\;:\; x_j\in\mathcal{F}\text{ for }j=1,\dots,n\}.\\)
+$$
+\begin{align*}
+\mathcal{F}=\{(x_1,\dots,x_n)\;:\; x_j\in\mathcal{F}\text{ for }j=1,\dots,n\}.
+\end{align*}
+$$
 
 > For $$(x_1,\dots,x_n)\in\mathcal{F^n}$$ and $$j=1,\dots,n$$, $$x_j$$ is the $$j^{\text{th}}$$ coordinate of $$(x_1,\dots,x_n)$$.
 

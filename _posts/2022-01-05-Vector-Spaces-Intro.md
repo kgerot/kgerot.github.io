@@ -61,10 +61,18 @@ $$\mathcal{R}^2$$ and $$\mathcal{R}^3$$ are both probably familiar to you.
 
 $$\mathcal{R}^2$$ is the set of all real ordered pairs (as if on a plane), also denoted by
 
-\\(\mathcal{R}^2 = \{(x,y)\;:\; x,y\in\mathcal{R}.\}\\)
+$$
+\begin{align*}
+\mathcal{R}^2 = \{(x,y)\;:\; x,y\in\mathcal{R}.\}
+\end{align*}
+$$
 
 $$\mathcal{R}^2$$ is the set of all real ordered triples (as if in ordinary space), also denoted by
 
-\\(\mathcal{R}^3 = \{(x,y,z)\;:\; x,y,z\in\mathcal{R}.\}\\)
+$$
+\begin{align*}
+\mathcal{R}^3 = \{(x,y,z)\;:\; x,y,z\in\mathcal{R}.\}
+\end{align*}
+$$
 
 Both triples and ordered pairs are lists with length 3 and 2 respectively.

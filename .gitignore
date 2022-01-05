@@ -35,4 +35,4 @@ Temporary Items
 _site
 
 # unfinished posts
-*wip.md
+_posts/wip/*

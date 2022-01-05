@@ -49,7 +49,7 @@ Moving into higher dimensions, we can define $$\mathcal{R}^n$$ and $$\mathcal{C}
 
 > $$\mathcal{F}^n$$ is the set of all lists of length $$n$$ of elements of $$\mathcal{F}$$:
 
-$$
+> $$
 \begin{align*}
 \mathcal{F}=\{(x_1,\dots,x_n)\;:\; x_j\in\mathcal{F}\text{ for }j=1,\dots,n\}.
 \end{align*}
@@ -67,7 +67,7 @@ $$
 \end{align*}
 $$
 
-$$\mathcal{R}^2$$ is the set of all real ordered triples (as if in ordinary space), also denoted by
+and $$\mathcal{R}^3$$ is the set of all real ordered triples (as if in ordinary space), also denoted by
 
 $$
 \begin{align*}

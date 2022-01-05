@@ -38,6 +38,8 @@ Other properties of complex arithmetic include commutativity, associativity, add
 
 $$\mathcal{R}$$ and $$\mathcal{C}$$ are also referred to as fields (and can thus are sometimes generalized using the notation $$\mathcal{F}$$). Each element of a field $$\mathcal{F}$$ is a scalar (or number).
 
+### Definition
+
 Moving into higher dimensions, we can define $$\mathcal{R}^n$$ and $$\mathcal{C}^n$$ (generalized as $$\mathcal{F}^n$$) as follows
 
 > $$\mathcal{F}^n$$ is the set of all lists of length $$n$$ of elements of $$\mathcal{F}$$:

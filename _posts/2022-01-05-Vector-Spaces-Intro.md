@@ -30,9 +30,12 @@ Two major sets are $$\mathcal{R}$$ (all real numbers) and $$\mathcal{C}$$ (all c
 
 Complex numbers follow the following rules for addition and multiplication:
 
-\\((a+bi)+(c+di) = (a+c)+(b+d)i\\)
-
-\\((a+bi)(c+di) = (ac-bd)+(ad+bc)i\\)
+$$
+\begin{align*}
+(a+bi)+(c+di) &= (a+c)+(b+d)i\\
+(a+bi)(c+di) &= (ac-bd)+(ad+bc)i
+\end{align*}
+$$
 
 Knowing that $$i^2=-1$$, you can also just use normal arithmetic to solve a multiplication problem.
 

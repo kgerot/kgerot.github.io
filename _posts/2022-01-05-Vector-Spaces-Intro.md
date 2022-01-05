@@ -35,3 +35,15 @@ Complex numbers follow the following rules for addition and multiplication:
 Knowing that $$i^2=-1$$, you can also just use normal arithmetic to solve a multiplication problem.
 
 Other properties of complex arithmetic include commutativity, associativity, additive and multiplicative identities, additive and multiplicative inverses, and the distributive property.
+
+$$\mathcal{R}$$ and $$\mathcal{C}$$ are also referred to as fields (and can thus are sometimes generalized using the notation $$\mathcal{F}$$). Each element of a field $$\mathcal{F}$$ is a scalar (or number).
+
+$$\mathcal{R}^2$$ and $$\mathcal{R}^3$$ are both probably familiar to you.
+
+$$\mathcal{R}^2$$ is the set of all real ordered pairs (as if on a plane), also denoted by
+
+\\(\mathcal{R}^2 = \{(x,y)\;:\; x,y\in\mathcal{R}\}\\)
+
+$$\mathcal{R}^2$$ is the set of all real ordered triples (as if in ordinary space), also denoted by
+
+\\(\mathcal{R}^3 = \{(x,y,z)\;:\; x,y,z\in\mathcal{R}\}\\)

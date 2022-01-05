@@ -38,6 +38,14 @@ Other properties of complex arithmetic include commutativity, associativity, add
 
 $$\mathcal{R}$$ and $$\mathcal{C}$$ are also referred to as fields (and can thus are sometimes generalized using the notation $$\mathcal{F}$$). Each element of a field $$\mathcal{F}$$ is a scalar (or number).
 
+Moving into higher dimensions, we can define $$\mathcal{R}^n$$ and $$\mathcal{C}^n$$ (generalized as $$\mathcal{F}^n$$) as follows
+
+$$\mathcal{F}^n$$ is the set of all lists of length $$n$$ of elements of $$\mathcal{F}$$:
+
+\\(\mathcal{F}=\{(x_1,\dots,x_n)\;:\; x_j\in\mathcal{F}\text{ for }j=1,\dots,n\}.\\)
+
+For $$(x_1,\dots,x_n)\in\mathcal{F^n}$$ and $$j=1,\dots,n$$, $$x_j$$ is the $$j^{\text{th}}$$ coordinate of $$(x_1,\dots,x_n)$$.
+
 $$\mathcal{R}^2$$ and $$\mathcal{R}^3$$ are both probably familiar to you.
 
 $$\mathcal{R}^2$$ is the set of all real ordered pairs (as if on a plane), also denoted by
@@ -48,6 +56,4 @@ $$\mathcal{R}^2$$ is the set of all real ordered triples (as if in ordinary spac
 
 \\(\mathcal{R}^3 = \{(x,y,z)\;:\; x,y,z\in\mathcal{R}.\}\\)
 
-Moving into higher dimensions, we can define $$\mathcal{R}^n$$ and $$\mathcal{C}^n$$ (generalized as $$\mathcal{F}^n$$) as follows
-
-> $$\mathcal{R}^n$$
+Both triples and ordered pairs are lists with length 3 and 2 respectively.

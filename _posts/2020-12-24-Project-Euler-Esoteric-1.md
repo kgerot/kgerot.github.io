@@ -2,7 +2,7 @@
 layout: post
 title: Project Euler - Problem 1 (Esoteric)
 subtitle: Solution to Problem 1 in brainf, P", and Unary
-header-img: img/unsplash-esoteric-one.jpg
+header-img: img/squares.png
 tags: ["project-euler", "esoteric", "brainf"]
 usemathjax: true
 ---

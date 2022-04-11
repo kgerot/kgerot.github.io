@@ -3,8 +3,8 @@
   "short_name": "Katie Gerot",
   "description": "statistics and code",
   "icons": [{
-    "src": "icons/android-chrome-192x192.png",
-    "sizes": "192x192",
+    "src": "icons/Earth-Node-348.png",
+    "sizes": "348x348",
     "type": "image/png"
   }],
   "background_color": "#fff",

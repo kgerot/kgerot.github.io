@@ -252,7 +252,7 @@ pre code {
   }
 }
 .navbar-custom {
-  background: none;
+  background: var(--cultured);
   border: none;
   position: absolute;
   top: 0;
@@ -264,7 +264,7 @@ pre code {
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
-  color: white;
+  color: var(--jet);
   height: 56px;
   line-height: 25px;
 }

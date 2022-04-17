@@ -4,6 +4,7 @@ title: "Home"
 ---
 
 <section>
+    <h2 style="text-align:center">Posts</h2>
     {% for post in paginator.posts %}
     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
@@ -35,34 +36,33 @@ title: "Home"
     <!-- Pager -->
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
-    {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-    {% else %}
-        <span class="previous">&laquo; Newer</span>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-        <em>{{ page }}</em>
-        {% elsif page == 1 %}
-        <a href="{{ '/' | relative_url }}">{{ page }}</a>
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
         {% else %}
-        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+            <span class="previous">&laquo; Newer</span>
         {% endif %}
-    {% endfor %}
 
-    {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-    {% else %}
-        <span class="next">Older &raquo;</span>
-    {% endif %}
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+            <em>{{ page }}</em>
+            {% elsif page == 1 %}
+            <a href="{{ '/' | relative_url }}">{{ page }}</a>
+            {% else %}
+            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+        {% else %}
+            <span class="next">Older &raquo;</span>
+        {% endif %}
     </div>
     {% endif %}
 </section>
 
 {% if site.featured-tags %}
 <section>
-    <!-- no hr -->
     <h5>FEATURED TAGS</h5>
     <div class="tags">
         {% for tag in site.tags %}

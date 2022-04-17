@@ -311,9 +311,13 @@ pre code {
 }
 .post-container .pager li.next {
   float: right;
+  list-style-type: none;
+  text-align: center;
 }
 .post-container .pager li.previous {
   float: left;
+  list-style-type: none;
+  text-align: center;
 }
 .post-container .pager li > a {
   width: 100%;

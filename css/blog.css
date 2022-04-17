@@ -183,7 +183,7 @@ pre code {
 }
 
 .next {
-  color: var(--jet);
+  color: var(--yellow-orange);
 }
 .previous {
   color: var(--yellow-orange)
@@ -369,7 +369,7 @@ pre code {
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 75px 0 35px;
+  padding: 95px 0 35px;
   color: var(--cultured);
 }
 @media only screen and (min-width: 768px) {
@@ -380,7 +380,7 @@ pre code {
   }
 }
 .intro-header .site-heading {
-  padding: 85px 0 50px;
+  padding: 95px 0 50px;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading {

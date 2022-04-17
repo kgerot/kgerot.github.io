@@ -306,18 +306,12 @@ pre code {
   line-height: 2;
   margin-top: 20px;
 }
-.post-container .pager li {
-  width: 48%;
+
+.next {
+  color: var(--jet);
 }
-.post-container .pager li.next {
-  float: right;
-  list-style-type: none;
-  text-align: center;
-}
-.post-container .pager li.previous {
-  float: left;
-  list-style-type: none;
-  text-align: center;
+.previous {
+  color: var(--yellow-orange)
 }
 .post-container .pager li > a {
   width: 100%;

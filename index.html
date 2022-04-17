@@ -33,24 +33,27 @@ title: "Home"
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer Posts</a>
-    </li>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+  {% else %}
+    <span class="previous">&laquo; Newer</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ '/' | relative_url }}">{{ page }}</a>
     {% else %}
-    <li class="previous">
-        <span>&laquo; Newer Posts</span>
-    </li>
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &raquo;</a>
-    </li>
-    {% else %}
-    <li class="next">
-        <span>Older Posts &raquo;</span>
-    </li>
-    {% endif %}
-</ul>
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+  {% else %}
+    <span class="next">Older &raquo;</span>
+  {% endif %}
+</div>
 {% endif %}

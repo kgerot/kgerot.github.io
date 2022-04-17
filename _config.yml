@@ -10,9 +10,9 @@ baseurl: ""
 google_analytics: G-0JF09M14QR
 sidebar: true
 sidebar-about-description: "Senior pursuing a dual honors degree in Computer Science and Math with a minor in Statistics at the University of Nebraska--Lincoln."
-sidebar-avatar:  img/me.png
+sidebar-avatar: img/me.png
 RSS: true
-github_username:  kgerot
+github_username: kgerot
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]

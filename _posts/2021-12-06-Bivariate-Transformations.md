@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bivariate Transformations
-header-img: img/pixabay-rocks.jpg
+header-img: img/roots.jpg
 tags: ["statistics", "explanations"]
 icon: img/roots.jpg
 usemathjax: true

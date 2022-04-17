@@ -11,6 +11,7 @@ RSS: true
 github_username: kgerot
 permalink: pretty
 paginate: 5
+paginate_path: "/blog/page:num/"
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true
 gems: [jekyll-paginate, jekyll-seo-tag]

@@ -111,11 +111,11 @@ pre code {
   margin-bottom: 15px;
 }
 .post-container a {
-  color: #337ab7;
+  color: var(--opal);
 }
 .post-container a:hover,
 .post-container a:focus {
-  color: var(--opal);
+  color: var(--tea-green);
 }
 .post-container h1,
 .post-container h2,

@@ -685,6 +685,7 @@ img::-moz-selection {
   border-radius: 999em;
   padding: 0 10px;
   color: var(--black-coral);
+  background-color: rgba(255, 255, 255, 0.2);
   line-height: 24px;
   font-size: 12px;
   text-decoration: none;
@@ -697,7 +698,7 @@ img::-moz-selection {
 .tags .tag:active {
   color: var(--charcoal);
   border-color: var(--charcoal);
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
 @media only screen and (min-width: 768px) {

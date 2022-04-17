@@ -111,6 +111,12 @@ pre code {
   padding: 100px 0 20px
 }
 
+.home-img {
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
 /* Post List and Containers*/
 .postlist-container {
   margin-bottom: 15px;

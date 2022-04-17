@@ -4,7 +4,6 @@ title: "Home"
 ---
 
 <section>
-    <h3>POSTS</h3>
     {% for post in paginator.posts %}
     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
@@ -64,7 +63,7 @@ title: "Home"
 {% if site.featured-tags %}
 <section>
     <!-- no hr -->
-    <h3>FEATURED TAGS</h3>
+    <h5>FEATURED TAGS</h5>
     <div class="tags">
         {% for tag in site.tags %}
             {% if tag[1].size > {{site.featured-condition-size}} %}

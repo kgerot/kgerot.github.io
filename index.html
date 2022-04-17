@@ -3,23 +3,6 @@ layout: home
 title: "Home"
 ---
 
-{% if site.featured-tags %}
-<section>
-    <!-- no hr -->
-    <h3>FEATURED TAGS</h3>
-    <div class="tags">
-        {% for tag in site.tags %}
-            {% if tag[1].size > {{site.featured-condition-size}} %}
-                <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
-                    {{ tag[0] }}
-                </a>
-            {% endif %}
-        {% endfor %}
-    </div>
-</section>
-<hr>
-{% endif %}
-
 <section>
     <h3>POSTS</h3>
     {% for post in paginator.posts %}
@@ -77,3 +60,20 @@ title: "Home"
     </div>
     {% endif %}
 </section>
+
+{% if site.featured-tags %}
+<section>
+    <!-- no hr -->
+    <h3>FEATURED TAGS</h3>
+    <div class="tags">
+        {% for tag in site.tags %}
+            {% if tag[1].size > {{site.featured-condition-size}} %}
+                <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                    {{ tag[0] }}
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+<hr>
+{% endif %}

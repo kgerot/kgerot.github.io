@@ -6,7 +6,7 @@ title: "Home"
 {% if site.featured-tags %}
 <section>
     <!-- no hr -->
-    <h5>FEATURED TAGS</h5>
+    <h4>FEATURED TAGS</h4>
     <div class="tags">
         {% for tag in site.tags %}
             {% if tag[1].size > {{site.featured-condition-size}} %}
@@ -21,7 +21,7 @@ title: "Home"
 {% endif %}
 
 <section>
-    <h5>POSTS</h5>
+    <h2>POSTS</h2>
     {% for post in paginator.posts %}
     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
@@ -34,7 +34,7 @@ title: "Home"
             </h3>
             {% endif %}
             <div class="post-content-preview">
-                {{ post.content | strip_html | truncate:250 }}
+                {{ post.content | strip_html | truncate:200 }}
             </div>
         </a>
         <p class="post-meta">

@@ -10,7 +10,7 @@ baseurl: ""
 RSS: true
 github_username: kgerot
 permalink: pretty
-paginate: 10
+paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true
 gems: [jekyll-paginate, jekyll-seo-tag]

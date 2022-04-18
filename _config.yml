@@ -10,7 +10,7 @@ baseurl: ""
 RSS: true
 github_username: kgerot
 permalink: pretty
-paginate: 5
+paginate: 3
 paginate_path: "/blog/page:num/"
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true

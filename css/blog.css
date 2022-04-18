@@ -189,10 +189,16 @@ pre code {
 }
 
 .next {
-  color: var(--yellow-orange);
+  color: var(--black-coral);
+}
+a > .next {
+  color: var(--opal);
 }
 .previous {
-  color: var(--yellow-orange)
+  color: var(--black-coral);
+}
+a > .previous {
+  color: var(--opal)
 }
 .post-container .pager li > a {
   width: 100%;

@@ -37,25 +37,25 @@ title: "Home"
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
         {% if paginator.previous_page %}
-            <a class="previosu" href="{{ paginator.previous_page_path | relative_url }}">&larr; Older Posts</a>
+            <a style="display:inline"  href="{{ paginator.previous_page_path | relative_url }}">&larr; Older Posts</a>
         {% else %}
-            <span class="previous">Page 1</span>
+            <span style="display:inline" >Page 1</span>
         {% endif %}
 
         {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
-            <p>{{ page }}</p>
+            <p style="display:inline" >{{ page }}</p>
             {% elsif page == 1 %}
-            <a href="{{ '/' | relative_url }}">{{ page }}</a>
+            <a style="display:inline" href="{{ '/' | relative_url }}">{{ page }}</a>
             {% else %}
-            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+            <a style="display:inline" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
             {% endif %}
         {% endfor %}
 
         {% if paginator.next_page %}
-            <a class="next" href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
+            <a style="display:inline" href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
         {% else %}
-            <span class="next">End</span>
+            <span style="display:inline" >End</span>
         {% endif %}
     </div>
     {% endif %}

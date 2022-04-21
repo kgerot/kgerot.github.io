@@ -187,19 +187,6 @@ pre code {
   line-height: 2;
   margin-top: 20px;
 }
-
-.next {
-  color: var(--black-coral);
-}
-a > .next {
-  color: var(--opal);
-}
-.previous {
-  color: var(--black-coral);
-}
-a > .previous {
-  color: var(--opal)
-}
 .post-container .pager li > a {
   width: 100%;
 }

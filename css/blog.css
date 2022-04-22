@@ -28,7 +28,8 @@
 }
 
 .pagination a,
-.pagination span {
+.pagination span,
+.pagination p {
   display: inline;
 }
 

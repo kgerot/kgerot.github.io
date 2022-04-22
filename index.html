@@ -37,9 +37,9 @@ title: "Home"
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
         {% if paginator.previous_page %}
-            <a style="display:inline"  href="{{ paginator.previous_page_path | relative_url }}">&larr; Older Posts</a>
+            <a style="display:inline"  href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer Posts</a>
         {% else %}
-            <span style="display:inline" >Page 1</span>
+            <span style="display:inline" >&larr;</span>
         {% endif %}
 
         {% for page in (1..paginator.total_pages) %}
@@ -55,7 +55,7 @@ title: "Home"
         {% if paginator.next_page %}
             <a style="display:inline" href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
         {% else %}
-            <span style="display:inline" >End</span>
+            <span style="display:inline" >&rarr;</span>
         {% endif %}
     </div>
     {% endif %}

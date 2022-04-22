@@ -4,6 +4,8 @@ SEOTitle: "Katie Gerot"
 description: "Writeups on statistics, programming, mathematics, and pedagogy (as well as whatever is interesting to me at the moment)."
 url: "http://kgerot.github.io"
 github_repo: "https://github.com/kgerot/kgerot.github.io"
+masked_email: "&#107;&#97;&#116;&#104;&#101;&#114;&#105;&#110;&#101;&period;&#103;&#101;&#114;&#111;&#116;&commat;&#103;&#109;&#97;&#105;&#108;&period;&#99;&#111;&#109;"
+masked_delim_email: "&#107;&#97;&#116;&#104;&#101;&#114;&#105;&#110;&#101;&#32;&lsqb;&#100;&#111;&#116;&rsqb;&#32;&#103;&#101;&#114;&#111;&#116;&#32;&lsqb;&#97;&#116;&rsqb;&#32;&#103;&#109;&#97;&#105;&#108;&#32;&lsqb;&#100;&#111;&#116;&rsqb;&#32;&#99;&#111;&#109;"
 featured-tags: True
 featured-condition-size: 2
 baseurl: ""

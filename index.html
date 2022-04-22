@@ -11,6 +11,7 @@ title: "Home"
             <h4 class="post-title">
                 {{ post.title }}
             </h4>
+            {% if post.date %}{% endif %}
             {% if post.subtitle %}
             <h3 class="post-subtitle">
                 {{ post.subtitle }}
@@ -61,12 +62,13 @@ title: "Home"
     {% endif %}
 </section>
 <hr>
+
 {% if site.featured-tags %}
 <section>
     <h5>FEATURED TAGS</h5>
     <div class="tags">
         {% for tag in site.tags %}
-            {% if tag[1].size > {{site.featured-condition-size}} %}
+            {% if tag[1].size > site.featured-condition-size %}
                 <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
                     {{ tag[0] }}
                 </a>

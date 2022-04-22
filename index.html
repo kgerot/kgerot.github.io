@@ -37,30 +37,30 @@ title: "Home"
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
         {% if paginator.previous_page %}
-            <a style="display:inline"  href="{{ paginator.previous_page_path | relative_url }}">&larr; Prev</a>
+            <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Prev</a>
         {% else %}
-            <span style="display:inline" >&larr; Prev</span>
+            <span>&larr; Prev</span>
         {% endif %}
 
         {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
-            <p style="display:inline" >{{ page }}</p>
+            <p>{{ page }}</p>
             {% elsif page == 1 %}
-            <a style="display:inline" href="{{ '/' | relative_url }}">{{ page }}</a>
+            <a href="{{ '/' | relative_url }}">{{ page }}</a>
             {% else %}
-            <a style="display:inline" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
             {% endif %}
         {% endfor %}
 
         {% if paginator.next_page %}
-            <a style="display:inline" href="{{ paginator.next_page_path | relative_url }}">Next &rarr;</a>
+            <a href="{{ paginator.next_page_path | relative_url }}">Next &rarr;</a>
         {% else %}
-            <span style="display:inline" >Next &rarr;</span>
+            <span>Next &rarr;</span>
         {% endif %}
     </div>
     {% endif %}
 </section>
-
+<hr>
 {% if site.featured-tags %}
 <section>
     <h5>FEATURED TAGS</h5>

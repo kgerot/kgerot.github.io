@@ -32,25 +32,33 @@ layout: default
     <div class="row top-pad">
         <div class="col-lg-offset-1 col-md-offset-0">
             <p><b>Socials</b></p>
-            <a target="_blank" href="https://github.com/{{ site.github_username }}">
-                <span class="fa-stack fa-sm">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span> {{ site.github_username }} on GitHub
-            </a>
-            <a target="_blank" href="mailto:{{ site.masked_email }}?subject=Replace+this+subject+with+your+own">
-                <span class="fa-stack fa-sm">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                </span>
-                {{ site.masked_delim_email }}
-            </a>
-            <p><b>External Links</b></p>
-            <ul>
-                <li><a target="_blank" href="https://www.justmathematicscollective.net/index.html">Just Mathematics Collective</a></li>
-                <li><a target="_blank" href="https://www.justmathematicscollective.net/nsa_statement.html">NSA Statement</a></li>
-                <li><a target="_blank" href=""></a></li>
-            </ul>
+            <div class="row">
+                <div class="col-6 align-self-center">
+                    <a target="_blank" href="https://github.com/{{ site.github_username }}">
+                        <span class="fa-stack fa-sm">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span> {{ site.github_username }} on GitHub
+                    </a>
+                </div>
+                <div class="col-6 align-self-center">
+                    <a target="_blank" href="mailto:{{ site.masked_email }}?subject=Replace+this+subject+with+your+own">
+                        <span class="fa-stack fa-sm">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                        </span>
+                        {{ site.masked_delim_email }}
+                    </a>
+                </div>
+                <div class="col-12">
+                    <p><b>External Links</b></p>
+                    <ul>
+                        <li><a target="_blank" href="https://www.justmathematicscollective.net/index.html">Just Mathematics Collective</a></li>
+                        <li><a target="_blank" href="https://www.justmathematicscollective.net/nsa_statement.html">NSA Statement</a></li>
+                        <!-- <li><a target="_blank" href=""></a></li> -->
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <hr>

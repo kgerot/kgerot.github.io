@@ -9,25 +9,24 @@
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
     <!-- Web App Manifest -->
-    <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
+    <link rel="manifest" href="{{ site.url }}/pwa/manifest.json">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon-16x16.ico">
+    <link rel="shortcut icon" href="{{ site.url }}/img/favicon-16x16.ico">
 
     <!-- Safari Webpage Icon    by-BY -->
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="{{ site.url }}/img/apple-touch-icon.png">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url}}">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <!-- <link rel="stylesheet" href="{{ "/css/bootstrap.css" | prepend: site.url }}">-->
+    <!-- <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.url }}"> -->
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/blog.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="/css/core.css">
 
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
+    <!-- Icomoon Icons -->
+    <link rel="stylesheet" href="/css/icons/style.css">
 
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 

@@ -4,13 +4,13 @@
 {% include head.html %}
 
 <body ontouchstart="">
+    {% include sidebar.html %}
 
-    {% include nav.html %}
-
-    {{ content }}
+    <main>
+        {{ content }}
+    </main>
 
     {% include footer.html %}
-
 </body>
 
 </html>

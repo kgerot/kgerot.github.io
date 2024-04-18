@@ -1,16 +1,15 @@
 ---
 layout: post
 title: Bivariate Transformations
+subtitle: Transformations using the change of variable technique
 header-img: img/roots.jpg
-tags: ["statistics", "explanations"]
+tags: ["statistics", "explanations", "teaching-assistant"]
 icon: img/roots.jpg
 usemathjax: true
+lede: The generalized change of variables technique allows us to find the joint distribution of the transformations of two random variables. 
 ---
 
-
 # Bivariate Transformation Method
-
-How do we find a transformation of variables in statistics?
 
 Given random variables $Y_1$ and $Y_2$ with some joint distribution function $f_{Y_1,Y_2}(y_1,y_2)$ and some transformative functions of $y_1$ and $y_2$ such that
 

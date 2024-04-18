@@ -1,19 +1,5 @@
-title: Home
-header-img: img/geometria.png
-SEOTitle: "Home"
-description: "Writeups on statistics, programming, mathematics, and pedagogy (as well as whatever is interesting to me at the moment)."
-url: "http://kgerot.github.io"
-github_repo: "https://github.com/kgerot/kgerot.github.io"
-masked_email: "&#x67;&#x65;&#x72;&#x6f;&#x74;&#x6b;&#x40;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"
-masked_delim_email: "&#x67;&#x65;&#x72;&#x6f;<!-- masked -->&#x74;&#x6b;&#x20;&#x5b;&#x61;&#x74;&#x5d;&#x20;&#x70;&#x72;<!-- masked -->&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&#x20;&#x5b;&#x64;&#x6f;<!-- masked -->&#x74;&#x5d;&#x20;&#x63;&#x6f;&#x6d;"
-featured-tags: True
-featured-condition-size: 2
-baseurl: ""
-RSS: true
-github_username: kgerot
+# General Jekyll configuration
 permalink: pretty
-paginate: 3
-paginate_path: "/:num/"
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true
 plugins: [jekyll-paginate, jekyll-seo-tag]
@@ -21,4 +7,29 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
+
+# Site Configuration
+url: "http://kgerot.github.io"
+title: Home
+SEOTitle: "Home"
+description: "Writeups on whatever is interesting to me at the moment"
+header-img: img/geometria.png
 chrome-tab-theme-color: "#000000"
+RSS: true
+featured-tags: true
+featured-condition-size: 2
+
+# Pagination
+paginate: 4
+paginate_path: "/:num/"
+
+# External Links
+github_repo: "https://github.com/kgerot/kgerot.github.io"
+linkedin: true
+linkedin_url: "https://www.linkedin.com/in/katie-gerot-280a95143"
+github: true
+github_user: "https://github.com/kgerot"
+
+# Masked information
+masked_email: "&#x67;&#x65;&#x72;&#x6f;&#x74;&#x6b;&#x40;&#x70;&#x72;&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"
+masked_delim_email: "&#x67;&#x65;&#x72;&#x6f;<!-- masked -->&#x74;&#x6b;&#x20;&#x5b;&#x61;&#x74;&#x5d;&#x20;&#x70;&#x72;<!-- masked -->&#x6f;&#x74;&#x6f;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&#x20;&#x5b;&#x64;&#x6f;<!-- masked -->&#x74;&#x5d;&#x20;&#x63;&#x6f;&#x6d;"

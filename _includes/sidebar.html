@@ -1,0 +1,41 @@
+<div id="sidebar">
+    <div id="sidebar-top">
+        <a href="{{site.url}}"><div id="sidebar-img"><img src="/img/sigma.png"/></div></a>
+        <nav>
+            <h5>Pages</h5>
+            {% for page in site.pages %}{% if page.nav %}
+            <div class="nav-item">
+                <a href="{{ page.url | prepend: site.url }}">{{ page.title }}</a>
+            </div>
+            {% endif %}{% endfor %}
+        </nav>
+        {% if site.featured-tags %}
+        <section id="sidebar-tags">
+            <h5>Featured Tags</h5>
+            <div class="tag">
+                {% for tag in site.tags %}
+                    {% if tag[1].size > site.featured-condition-size %}
+                        <a href="{{ site.url }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                            <i class="ico-tag"></i> {{ tag[0] }}
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+    </div>
+    <div id="sidebar-bottom">
+        <hr>
+        <div id="icons">
+            {% if site.github %}
+                <a target="_blank" href="{{ site.github_user }}" class="item dark-green"><span><i class="ico-github"></i></span></a>
+            {% endif %}
+            {% if site.linkedin %}
+                <a target="_blank" href="{{ site.linkedin_url }}" class="item blue"><span><i class="ico-linkedin"></i></span></a>
+            {% endif %}
+            {% if site.RSS %}
+                <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="item light-red"><span><i class="ico-rss"></i></span></a>
+            {% endif %}
+        </div>
+    </div>
+</div>

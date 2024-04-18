@@ -343,6 +343,38 @@ article h1 {
     margin-top: 1.75rem;
 }
 
+/* Tags */
+
+.tag-container {
+    padding: 40px;
+}
+
+.tag-subcontainer {
+    margin: 2rem 0 1rem 0;
+}
+
+#tag_cloud {
+    margin: 2rem 0;;
+}
+
+.post-tag-head {
+    font-weight: bold;
+}
+
+.tag-post-preview {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--sidebar-bg);
+    margin: 1em 0;
+    padding: 10px 20px 30px 20px;
+}
+
+.tag-post-meta {
+    font-size: small;
+    color: var(--body-faded2);
+    font-style: oblique;
+}
+
 @media screen and (min-width: 700px) {
     main {
         overflow-y: scroll;
